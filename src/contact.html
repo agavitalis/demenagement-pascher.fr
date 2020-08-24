@@ -1,0 +1,37 @@
+---
+layout: default
+permalink: /contact
+---
+
+<h1>Contact</h1>
+
+<form class="form" method="post" action="{{ site.data.company.url.notify }}">
+    <input type="hidden" name="lang" value="fr">
+    <input type="hidden" name="type" value="contact">
+    <input type="hidden" name="website" value="{{ site.data.company.websiteId }}">
+    <input type="hidden" name="redirectUrl" value="{{site.url}}{% link formulaire-succes.html %}">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="commentaire">Commentaire</label>
+                <textarea class="form-control" id="commentaire" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>

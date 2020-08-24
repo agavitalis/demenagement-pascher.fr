@@ -1,0 +1,18 @@
+media_presets:
+  mobile: 'max-width: 600px'
+
+markup_presets:
+  default:
+    widths: [600, 900, 1200]
+    formats: [original]
+    sizes:
+      mobile: 80vw
+    attributes:
+      source: class="img-fluid"
+      img: class="img-fluid"
+  icon:
+    widths: [30]
+    formats: [original]
+    attributes:
+      source: 'class="d-inline-block align-top" width="30" height="30"'
+      img: 'class="d-inline-block align-top" width="30" height="30"'

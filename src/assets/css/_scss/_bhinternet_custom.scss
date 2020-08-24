@@ -1,0 +1,47 @@
+.navbar {
+  font-family: "Heebo", $font-family-base;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  .navbar-brand{
+    text-transform: none;
+    color: $primary;
+  }
+  li {
+    margin-right: 10px;
+
+    &.active {
+      a {
+        color: $primary !important;
+      }
+    }
+    .btn {
+      font-size: 11px;
+    }
+  }
+}
+
+.footer{
+  //border-top: 1px solid $gray-300;
+  //background: #fff;
+  //padding-top: $grid-gutter-width*3;
+  //margin-top: $grid-gutter-width*3;
+  //
+  //li{
+  //  margin-bottom: $grid-gutter-width/3;
+  //  a{
+  //    color:$gray-500;
+  //    i{
+  //      color: $primary;
+  //      margin-right: .5rem !important;
+  //    }
+  //  }
+  //}
+  //
+  //h2{
+  //  font-size: 18px;
+  //  font-family: "Heebo", $font-family-base;
+  //  text-transform: uppercase;
+  //  font-weight: bold;
+  //}
+}

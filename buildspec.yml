@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      ruby: 2.6
+    commands:
+      - gem install bundler jekyll mini_magick
+      - bundle install
+  build:
+    commands:
+      - echo "******** Convert version ********"
+      - bundle exec convert -version
+      - echo "******** Building Jekyll site ********"
+      - bundle exec jekyll build --trace
+      - echo "******** Uploading to S3 ********"
+      - aws s3 sync _site/ s3://www.logiciel-paie.com

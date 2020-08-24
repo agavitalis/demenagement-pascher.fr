@@ -1,0 +1,17 @@
+<title>{{ page.title }} | {{ page.description }}</title>
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="{{ page.description }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:site_name" content="{{ site.data.company.name }}" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"{{ site.url }}{{ page.url }}",
+"description":"{{ page.description }}",
+"name":"{{ page.title }}"
+}
+</script>
