@@ -1,1 +1,1 @@
-web: bundle exec puma -t 8:32 -w 3 -p $PORT
+web: vendor/bin/heroku-php-apache2 _site/
