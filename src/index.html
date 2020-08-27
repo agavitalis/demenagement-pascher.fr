@@ -11,7 +11,8 @@ permalink: /
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CPlayfair+Display:400,700,700i%7CLato:300%7CMontserrat:300,400,500,600">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CPlayfair+Display:400,700,700i%7CLato:300%7CMontserrat:300,400,500,600">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -66,20 +67,20 @@ permalink: /
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
-                                        <div class="unit-body"><a href="tel:#">1-800-1234-5671</a></div>
+                                        <div class="unit-body"><a href="tel:{{site.phone}}">{{site.phone}}</a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
-                                        <div class="unit-body"><a href="mailto:#">info@demolink.org </a></div>
+                                        <div class="unit-body"><a href="mailto:{{site.email}}">{{site.email}} </a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><span class="icon text-middle fa-map-marker"></span>
                                         </div>
-                                        <div class="unit-body"><a href="#">121 wallstreet Street, ny york , usa </a>
+                                        <div class="unit-body"><a href="#">{{site.address}} </a>
                                         </div>
                                     </div>
                                 </li>
@@ -102,39 +103,45 @@ permalink: /
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
                                             class="brand-logo-dark" src="./assets/images/logo-default-159x40.png" alt=""
-                                            width="159" height="40" srcset="./assets/images/logo-default-318x80.png 2x" /><img
-                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png" alt=""
-                                            width="159" height="40" srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
+                                            width="159" height="40"
+                                            srcset="./assets/images/logo-default-318x80.png 2x" /><img
+                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png"
+                                            alt="" width="159" height="40"
+                                            srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
                                     <!-- RD Navbar Nav-->
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link"
+                                                href="index.html">Accueil</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Services</a>
+                                      
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">Nos formules</a>
                                             <!-- RD Navbar Dropdown-->
                                             <ul class="rd-menu rd-navbar-dropdown">
                                                 <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="single-service.html">Single Service</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link"
-                                                href="practice-areas.html">Practice Areas</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">News</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
+                                                        href="single-post.html">Nos formules</a>
+                                                </li>
                                                 <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="single-post.html">Single Post</a></li>
+                                                        href="single-post.html">Monte-Meubles</a>
+                                                </li>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                        href="single-post.html">Accessoires</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="practice-areas.html">Notre
+                                                entreprise</a>
                                         </li>
+
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Devis en
+                                                ligne</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contact</a>
+                                        </li>
+
                                     </ul>
                                 </div>
                                 <!-- RD Navbar Search-->
@@ -168,12 +175,10 @@ permalink: /
                         <div class="container">
                             <div class="row justify-content-lg-end">
                                 <div class="col-lg-7 col-xl-5">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Affordable Legal <span
-                                            class="text-italic">Help</span></h1>
-                                    <p data-caption-animate="fadeInUp" data-caption-delay="250">The highly qualified
-                                        team of Legalor’s attorneys and consultants will be glad to provide necessary
-                                        legal assistance.</p><a class="button button-primary button-circle" href="#"
-                                        data-caption-animate="fadeInUp" data-caption-delay="450">Free Consultation</a>
+                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Votre déménagement en
+                                        Île de France à<span class="text-italic">petits prix!</span></h1>
+                                        <a class="button button-primary button-circle" href="#"
+                                        data-caption-animate="fadeInUp" data-caption-delay="450">Nous Contacter</a>
                                 </div>
                             </div>
                         </div>
@@ -187,46 +192,28 @@ permalink: /
                     <div class="block-icon-modern block-icon-primary">
                         <div class="icon-figure"><span class="icon icon-xl thin-icon-briefcase-2"></span></div>
                         <div class="block-icon-caption">
-                            <h4 class="block-icon-title"><a href="single-service.html">Helping Business</a></h4>
-                            <p>Business requires strong legislative background to operate well.</p>
+                            <h4 class="block-icon-title"><a href="single-service.html">Organisez votre déménagement pas cher en Île de France!</a></h4>
+                            <p>Besoin d’informations? Contactez-nous au 06 72 16 76 34.</p>
                         </div>
                     </div>
-                    <div class="block-icon-modern block-icon-secondary">
-                        <div class="icon-figure"><span class="icon icon-xl thin-icon-user"></span></div>
-                        <div class="block-icon-caption">
-                            <h4 class="block-icon-title"><a href="single-service.html">Consulting Individuals</a></h4>
-                            <p>We advocate for our clients, seeking a fair resolution within a timeframe.</p>
-                        </div>
-                    </div>
-                    <div class="block-icon-modern block-icon-secondary">
-                        <div class="icon-figure"><span class="icon icon-xl thin-icon-umbrella"></span></div>
-                        <div class="block-icon-caption">
-                            <h4 class="block-icon-title"><a href="single-service.html">Solving Insurance Claims</a></h4>
-                            <p>Insurance issues require excellent knowledge and great intuition.</p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             <div class="container">
                 <div class="row row-30">
                     <div class="col-md-6 col-lg-4">
                         <div class="section-title section-title-left">
-                            <h2 class="text-capitalize">Why You Can Trust Legalor: <span
-                                    class="text-italic text-primary">Our Values</span>
+                            <h2 class="text-capitalize">Pour un <span class="text-italic text-primary">déménagement pas cher</span> et sur mesure 
+                                    
                             </h2>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-8 pt-lg-5">
-                        <p>We value justice, honesty and time. We are always at your service as we are in charge of your
-                            defence. Any detail will be noticed and it can be essential for your case.</p>
-                        <p>During our work we gathered a team of devoted experts with rich experience in juridical help.
-                            We put a great emphasis on business law, because in today’s rapidly-changing environment,
-                            people require assistance in business spheres. Our experience allows us to be confident and
-                            stand by our words.</p>
-                        <p>Our company was established in 1998. We started as a small legal consultancy. We have proved
-                            our competence and had many satisfied clients. We expanded our activity and started
-                            providing many other juridical services to meet wider clients needs.</p><a
-                            class="button button-circle button-primary" href="about.html">Read more</a>
+                        <p>
+                            Parce qu’un déménagement en Île de France ne devrait plus être une contrainte, notre entreprise vous propose les meilleurs prix en termes de déménagements ! Un nouveau départ s’offre à vous, nous sommes là pour veiller sur votre budget. Notre entreprise, Déménagement Pas Cher vous propose des formules à prix qui s’adaptent à tous les budgets et tous les besoins.
+                        </p>
+                        <a class="button button-circle button-primary" href="contact.html">Nous contacter</a>
+                            
                     </div>
                 </div>
             </div>
@@ -237,11 +224,8 @@ permalink: /
                     <div class="row row-50">
                         <div class="col-12">
                             <div class="section-title">
-                                <h2>20 Years Of Experience In Various Cases</h2>
-                                <p>We’re proud that our law firm offers top-notch legal services for a nationwide
-                                    affordable pricing! With us you’ll never feel like the lawyers are just robbers in
-                                    suits, besides, we win 98% of all cases. So with us, your chances of winning are as
-                                    high as they possibly can be!</p>
+                                <h2>Votre satisfaction, notre priorité!</h2>
+                                <p>Choisir un déménageur est une étape importante, bien que souvent stressante. Ce choix ne peut être pris à la légère, et la décision se fait majoritairement via les tarifs proposés par les différentes entreprises. Avec Déménagement Pas Cher , vous avez l'assurance de coûts maîtrisés et définis à l'avance.</p>
                             </div>
                         </div>
                         <div class="col-12">
@@ -290,73 +274,61 @@ permalink: /
         </section>
         <section class="bg-default section-md">
             <div class="container">
-                <div class="section-title text-center">
-                    <h2>Our Legal Practice Areas</h2>
+              <div class="row row-50">
+                <div class="col-md-6 col-lg-4">
+                  <div class="post-modern">
+                    <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/coins.jpg" alt="" width="370" height="300"></a></div>
+                    <div class="post-modern-caption text-center">
+                      
+                      <h4 class="post-modern-title"><a href="single-post.html">Des coûts maîtrisés</a></h4>
+                      <ul class="list-inline post-modern-meta list-inline-sm">
+                        <li class="list-inline-item"><a href="single-post.html">Avec Déménagement Pas Cher, pas de coûts cachés!</a></li>
+                       
+                      </ul>
+                      <div class="post-modern-text text-justify">
+                        <p>Notre entreprise Déménagement Pas Cher, c'est des formules sur mesure mais aussi des packages complets pour organiser votre déménagement le plus sereinement possible. Location de véhicules, démontage et remontage de meubles, transport et manutention, protection des biens fragiles, assurance, transport de matelas, canapés, sommiers... Des prestations complètes pour vous assurer tranquillité et sérénité le jour</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="row row-30">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-user"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Family Law</a></h4>
-                                <p>We aim to support families in resolving their own disputes. We ensure professional
-                                    consultancy and result.</p>
-                            </div>
-                        </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="post-modern">
+                    <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/demenageurs.jpg" alt="" width="370" height="300"></a></div>
+                    <div class="post-modern-caption text-center">
+                        <h4 class="post-modern-title"><a href="single-post.html">Des déménageurs professionnels</a></h4>
+                      <ul class="list-inline post-modern-meta list-inline-sm">
+                        <li class="list-inline-item"><a href="single-post.html">Leur expérience est au service de vos besoins</a></li>
+                        
+                      </ul>
+                     
+                      <div class="post-modern-text text-justify">
+                        <p>Les équipes de Déménagement Pas Cher vous assistent avec efficacité et habilité, grâce à une expérience de plusieurs années dans le domaine. Faites leur confiance pour transporter vos affaires et les amener dans votre nouvelle demeure, même les plus lourdes, les plus encombrantes ou les plus fragiles, le tout à petit prix. Demandez votre devis en ligne directement via notre formulaire.</p>
+                      </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-briefcase-2"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Business Law</a></h4>
-                                <p>Professional help with financial, commercial, tax disputes and other complex business
-                                    issues.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-book"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Civil Litigation</a></h4>
-                                <p>Your civil rights will be defended and represented on the highest level with the best
-                                    outcome.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-umbrella"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Insurance Defence</a></h4>
-                                <p>We understand how to handle the complex statutory and contractual issues that
-                                    frequently arise in claims.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-home"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Land &amp; Asset</a></h4>
-                                <p>Legalor offers consultancy services and asset management, bringing a new vision to
-                                    the world of investment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-money"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Finance Law</a></h4>
-                                <p>We work in an open dialogue with you in order to devise the strategy which will best
-                                    serve your interests.</p>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="post-modern">
+                    <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/demenagement_pas_cher.jpg" alt="" width="370" height="300"></a></div>
+                    <div class="post-modern-caption text-center">
+                        <h4 class="post-modern-title"><a href="single-post.html">Besoin d'assistance?</a></h4>
+                        <ul class="list-inline post-modern-meta list-inline-sm">
+                            <li class="list-inline-item"><a href="single-post.html">Déménagement Pas Cher a la solution à vos problèmes!</a></li>
+                            
+                        </ul>
+                      
+                        <div class="post-modern-text text-justify">
+                            <p>Avec l'aide de nos équipes de déménageurs qualifiés, simplifiez-vous la vie et allégez votre charge de travail en leur confiant votre déménagement. Organisés et rigoureux en toute circonstance, ils sauront vous assister pour transférer vos affaires sur votre nouveau lieu de vie, tout en faisant attentions aux objets les plus fragiles, mais également en vous proposant des services de démontage/montage de meubles, emballage et déballage, location de camions, décrochage et raccrochage mural, protection du mobilier.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+               
+              
+              </div>
             </div>
-        </section>
+          </section>
+      
         <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-2.jpg">
             <div class="parallax-content section-md context-dark text-center bg-gray-700-filter-70">
                 <div class="container">
@@ -372,8 +344,8 @@ permalink: /
                                 data-stage-padding="15" data-loop="true" data-autoplay="true" data-margin="30"
                                 data-mouse-drag="false">
                                 <div class="block-testimonials-classic">
-                                    <div class="block-testimonials-classic-figure"><img src="./assets/images/user-1-100x100.jpg"
-                                            alt="" width="100" height="100" />
+                                    <div class="block-testimonials-classic-figure"><img
+                                            src="./assets/images/user-1-100x100.jpg" alt="" width="100" height="100" />
                                     </div>
                                     <div class="block-testimonials-classic-caption">
                                         <p>Some time ago our company has gone through a very harsh merger & acquisition
@@ -388,8 +360,8 @@ permalink: /
                                     </div>
                                 </div>
                                 <div class="block-testimonials-classic">
-                                    <div class="block-testimonials-classic-figure"><img src="./assets/images/user-2-100x100.jpg"
-                                            alt="" width="100" height="100" />
+                                    <div class="block-testimonials-classic-figure"><img
+                                            src="./assets/images/user-2-100x100.jpg" alt="" width="100" height="100" />
                                     </div>
                                     <div class="block-testimonials-classic-caption">
                                         <p>Business litigation has always been what our competitors were using to
@@ -404,8 +376,8 @@ permalink: /
                                     </div>
                                 </div>
                                 <div class="block-testimonials-classic">
-                                    <div class="block-testimonials-classic-figure"><img src="./assets/images/user-3-100x100.jpg"
-                                            alt="" width="100" height="100" />
+                                    <div class="block-testimonials-classic-figure"><img
+                                            src="./assets/images/user-3-100x100.jpg" alt="" width="100" height="100" />
                                     </div>
                                     <div class="block-testimonials-classic-caption">
                                         <p>As the one who recently suffered from the FELA (Federal Employers’ Liability
@@ -429,22 +401,22 @@ permalink: /
             <div class="container">
                 <div class="row row-30 row-bordered align-items-center">
                     <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/partner-1-135x102.png" alt="" width="135"
+                        <div class="block-partners"><img src="./assets/images/ref1.png" alt="" width="135"
                                 height="102" />
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/partner-2-160x76.png" alt="" width="160"
+                        <div class="block-partners"><img src="./assets/images/ref2.png" alt="" width="160"
                                 height="76" />
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/partner-3-144x73.png" alt="" width="144"
+                        <div class="block-partners"><img src="./assets/images/ref3.png" alt="" width="144"
                                 height="73" />
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/partner-4-141x82.png" alt="" width="141"
+                        <div class="block-partners"><img src="./assets/images/ref4.png" alt="" width="141"
                                 height="82" />
                         </div>
                     </div>
@@ -513,7 +485,7 @@ permalink: /
                 <div class="row row-50 justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center">
-                            <h2>Request a Free Legal Consultation</h2>
+                            <h2>DEVIS EN LIGNE GRATUIT</h2>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
