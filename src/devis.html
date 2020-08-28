@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Devis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CPlayfair+Display:400,700,700i%7CLato:300%7CMontserrat:300,400,500,600">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ie-panel"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img
+                src="./assets/images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+                alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+    </div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"> </div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <div class="page">
+        <!-- Page Header-->
+        <header class="section page-header header-transparent">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic rd-navbar-classic-dark" data-layout="rd-navbar-fixed"
+                    data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+                    data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed"
+                    data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px"
+                    data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true"
+                    data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                        data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                    <div class="rd-navbar-aside-outer rd-navbar-collapse bg-secondary">
+                        <div class="rd-navbar-aside">
+                            <ul class="list-inline list-inline-md">
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
+                                        <div class="unit-body"><a href="tel:{{site.phone}}">{{site.phone}}</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
+                                        <div class="unit-body"><a href="mailto:{{site.email}}">{{site.email}} </a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit unit-spacing-xs align-items-center">
+                                        <div class="unit-left"><span class="icon text-middle fa-map-marker"></span>
+                                        </div>
+                                        <div class="unit-body"><a href="#">{{site.address}}</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="rd-navbar-soc list-inline list-inline-sm">
+                                <li class="list-inline-item"><a class="icon fa-linkedin" href="#"></a></li>
+                                <li class="list-inline-item"><a class="icon fa-twitter" href="#"></a></li>
+                                <li class="list-inline-item"><a class="icon fa-facebook-f" href="#"></a></li>
+                                <li class="list-inline-item"><a class="icon fa-instagram" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Toggle-->
+                                <button class="rd-navbar-toggle"
+                                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <!-- RD Navbar Brand-->
+                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
+                                            class="brand-logo-dark" src="./assets/images/logo-default-159x40.png" alt=""
+                                            width="159" height="40"
+                                            srcset="./assets/images/logo-default-318x80.png 2x" /><img
+                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png"
+                                            alt="" width="159" height="40"
+                                            srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <!-- RD Navbar Nav-->
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Accueil</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">Nos formules</a>
+                                            <!-- RD Navbar Dropdown-->
+                                            <ul class="rd-menu rd-navbar-dropdown">
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                        href="single-post.html">Nos formules</a>
+                                                </li>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                        href="single-post.html">Monte-Meubles</a>
+                                                </li>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                        href="single-post.html">Accessoires</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">Notre
+                                                entreprise</a>
+                                        </li>
+
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="devis.html">Devis en
+                                                ligne</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- RD Navbar Search-->
+                                <div class="rd-navbar-search">
+                                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2"
+                                        data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                    <form class="rd-search" action="search-results.html"
+                                        data-search-live="rd-search-results-live" method="GET">
+                                        <div class="form-wrap">
+                                            <label class="form-label" for="rd-navbar-search-form-input">Search</label>
+                                            <input class="rd-navbar-search-form-input form-input"
+                                                id="rd-navbar-search-form-input" type="text" name="s"
+                                                autocomplete="off">
+                                            <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                                        </div>
+                                        <button class="rd-search-form-submit fa-search" type="submit"></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="breadcrumbs-custom bg-image context-dark"
+            style="background-image: url(./assets/images/breadcrumbs-bg.jpg);">
+            <div class="container">
+                <h4 class="breadcrumbs-custom-title">Devis</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="active">Devis</li>
+                </ul>
+            </div>
+        </section>
+        <section class="bg-default section-md">
+            <div class="container">
+                <div class="row row-50 justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center">
+                            <h2>Obtenez un devis en ligne pour votre déménagement en Île-de-France.</h2>
+                            <p>Remplissez le formulaire ci-dessous afin d’obtenir un devis pour votre déménagement en
+                                Île-de-France.
+                                Indiquez votre numéro de téléphone afin d'être recontacté et obtenir des informations
+                                plus précises</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        
+                        <form role="form" method="post" action="devis" enctype="multipart/form-data">
+                            <div class="col-xs-12">
+                               
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="title">
+                                                <span>1</span>
+                                                <h3>Coordonnées</h3>
+                                            </div>
+                                        </div>
+                                        <h4 class="col-sm-12">Information de contact</h4>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_firstname">Vos nom et prénom</label> <input type="text"
+                                                    name="firstname" id="form_firstname" value="" class="form-control"
+                                                    placeholder="Prénom" autofocus="autofocus"> </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_company">Nom de l'entreprise</label> <input type="text"
+                                                    name="company" id="form_company" value="" class="form-control"
+                                                    placeholder="Entreprise" autofocus="autofocus"> </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_email">E-mail</label> <input type="text" name="email"
+                                                    id="form_email" value="" class="form-control"
+                                                    placeholder="text@exemple.fr"> </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_phone">Téléphone</label> <input type="text"
+                                                    name="phone" id="form_phone" value="" class="form-control"
+                                                    placeholder="06 00 00 00 00"> </div>
+                                        </div>
+
+                                    </div>
+
+                                
+                            </div>
+
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="title">
+                                            <span>2</span>
+                                            <h3>Adresses</h3>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <fieldset>
+                                            <legend>Adresse actuelle</legend>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_address1">Adresse</label> <input type="text" name="address1"
+                                                    id="form_address1" value="" class="form-control" placeholder="Adresse">
+                                            </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_zipcode1">Code postal</label> <input type="text"
+                                                    name="zipcode1" id="form_zipcode1" value="" class="form-control"
+                                                    placeholder="75001"> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_city1">Ville</label> <input type="text" name="city1"
+                                                    id="form_city1" value="" class="form-control" placeholder="Ville"> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_input1">Étage</label> <input type="text" name="input1"
+                                                    id="form_input1" value="" class="form-control" placeholder="Étage"> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label>Avec ascenseur (à remplir si appartement) </label>
+                                                <div class="checkbox" style="margin-top: 0;">
+                                                    <label><input type="checkbox" name="checkbox1"></label> </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6">
+                                        <fieldset>
+                                            <legend>Adresse de destination</legend>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_address2">Adresse</label> <input type="text" name="address2"
+                                                    id="form_address2" value="" class="form-control" placeholder="Adresse">
+                                            </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_zipcode2">Code postal</label> <input type="text"
+                                                    name="zipcode2" id="form_zipcode2" value="" class="form-control"
+                                                    placeholder="75001"> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_city2">Ville</label> <input type="text" name="city2"
+                                                    id="form_city2" value="" class="form-control" placeholder="Ville"> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_input2">Étage</label> <input type="text" name="input2"
+                                                    id="form_input2" value="" class="form-control" placeholder="Étage"> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label>Avec ascenseur (à remplir si appartement) </label>
+                                                <div class="checkbox" style="margin-top: 0;">
+                                                    <label><input type="checkbox" name="checkbox2"></label> </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="title">
+                                        <span>3</span>
+                                        <h3>Prestations</h3>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-xs-12 col-sm-6">
+                                
+                                    <div class="col-xs-12">
+                                        <div id="select3" class="form-group has-feedback ">
+                                            <label for="form_select3">Formules Lights</label> <select name="select3"
+                                                id="form_select3" class="form-control">
+                                                <option>-------</option>
+                                                <option>Standard</option>
+                                                <option>Confort</option>
+                                                <option>Premium</option>
+                                            </select> </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <h4>Prestations complémentaires</h4>
+                                    <fieldset>
+                                        <div class="checkbox" style="margin-top: 0;">
+                                            <label><input type="checkbox" name="checkbox3">Garde meuble</label> </div>
+                                        <div class="checkbox" style="margin-top: 0;">
+                                            <label><input type="checkbox" name="checkbox4">Monte meuble</label> </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="title">
+                                                <span>4</span>
+                                                <h3>Informations complémentaires</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Informations complémentaires</h4>
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_date1">Date de déménagement</label>
+                                        <div class="input-group bootstrap-datepicker">
+                                            <input type="text" name="date1" id="form_date1" value=""
+                                                class="form-control" placeholder="28/08/2020"> <span
+                                                class="input-group-addon"><span
+                                                    class="fa fa-calendar fa-fw"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="form_evaluation">Évaluation en m3</label>
+                                        <div class="input-group">
+                                            <input type="text" name="evaluation" id="form_evaluation" value=""
+                                                class="form-control"> <span
+                                                class="input-group-addon">m<sup>3</sup></span>
+                                        </div>
+                                    </div>
+                                    <!-- <a href="" target="_blank" class="btn btn-primary">Calculateur de volume</a> -->
+                                </fieldset>
+                            </div>
+
+                            <div class="col-sm-12">
+                                
+                                <div class="form-group has-feedback ">
+                                    <label for="form_message">Message</label>
+                                     <textarea name="message" id="form_message"
+                                        class="form-control" rows="6"></textarea>
+                                     </div>
+                            </div>
+                           
+                            <div class="col-sm-12">
+                                
+                                <div class="form-button text-center">
+                                    <button class="button button-primary button-circle" type="submit">Obtenir le devis de votre
+                                        demanagement</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Google Map-->
+        <section class="section">
+            <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+            <!--Please note that YOUR_API_KEY should replaced with your key.-->
+            <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">-->
+            <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
+                data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]"
+                data-zoom="5">
+                <div class="google-map"></div>
+                <ul class="google-map-markers">
+                    <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
+                        data-description="9870 St Vincent Place, Glasgow" data-icon="./assets/images/gmap_marker.png"
+                        data-icon-active="./assets/images/gmap_marker_active.png"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- Page Footer-->
+        <footer class="section footer-classic context-dark bg-gray-700">
+            <div class="footer-classic-top section-sm">
+                <div class="container">
+                    <div class="row row-50">
+                        <div class="col-sm-6 col-lg-3"><a class="footer-logo" href="index.html"><img
+                                    src="./assets/images/logo-inverse-159x40.png" alt="" width="159" height="40" /></a>
+                            <p>If you or your business is facing a legal challenge that calls for sound advice, contact
+                                us today to arrange a free consultation with an attorney.</p>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <h5 class="footer-title">contact info</h5>
+                            <ul class="list">
+                                <li>{{site.address}}</li>
+                                <li><a href="mailto:#">{{site.email}}</a></li>
+                                <li><a href="tel:#">{{site.phone}}</a></li>
+                            </ul>
+                            <ul class="list">
+                                <li><span>Mon-Thu:</span> 9:30 am - 6:00 pm
+                                </li>
+                                <li><span>Fri: </span> 9:30 am - 5:00 pm
+                                </li>
+                                <li><span>Sat: </span> 10:00 am - 3:00 pm
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <ul class="link-list list-sm">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us </a></li>
+                                <li><a href="services.html">Services </a></li>
+                                <li><a href="news.html">News </a></li>
+                                <li><a href="contacts.html">Contacts </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <h5 class="footer-title">newsletter</h5>
+                            <!-- RD Mailform-->
+                            <form class="rd-mailform text-left" data-form-output="form-output-global"
+                                data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                                <div class="form-wrap">
+                                    <label class="form-label" for="footer-email">Your Email Address</label>
+                                    <input class="form-input" id="footer-email" type="email" name="email"
+                                        data-constraints="@Email @Required">
+                                </div>
+                                <div class="form-button">
+                                    <button class="button button-circle button-default-outline" type="submit">Sign
+                                        Up</button>
+                                </div>
+                            </form>
+                            <p>Be the first to find out about the latest legal news, updates, tips, and other
+                                information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+            </div>
+            <div class="footer-classic-bottom">
+                <div class="container">
+                    <div class="row row-30">
+                        <div class="col-md-9 order-md-1">
+                            <p class="rights"><span>&copy;&nbsp; </span><span
+                                    class="copyright-year"></span><span>&nbsp;</span><span>BHInternet</span><span>.&nbsp;</span><span>All
+                                    rights reserved</span><span>.&nbsp;</span><a href="#">Privacy
+                                    Policy</a></p>
+                        </div>
+                        <div class="col-md-3 order-md-2 text-md-right">
+                            <ul class="list-inline list-inline-sm social-list">
+                                <li class="list-inline-item"><a class="icon fa-linkedin" href="#"></a></li>
+                                <li class="list-inline-item"><a class="icon fa-twitter" href="#"></a></li>
+                                <li class="list-inline-item"><a class="icon fa-facebook-f" href="#"></a></li>
+                                <li class="list-inline-item"><a class="icon fa-instagram" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="./assets/js/core.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
