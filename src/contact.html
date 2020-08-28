@@ -99,9 +99,11 @@
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
                                             class="brand-logo-dark" src="./assets/images/logo-default-159x40.png" alt=""
-                                            width="159" height="40" srcset="./assets/images/logo-default-318x80.png 2x" /><img
-                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png" alt=""
-                                            width="159" height="40" srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
+                                            width="159" height="40"
+                                            srcset="./assets/images/logo-default-318x80.png 2x" /><img
+                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png"
+                                            alt="" width="159" height="40"
+                                            srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
@@ -195,44 +197,58 @@
                             <h2>Get in Touch</h2>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        <!-- RD Mailform-->
-                        <form class="rd-mailform text-left row row-20" data-form-output="form-output-global"
-                            data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-name">Your Name * </label>
-                                    <input class="form-input" id="contact-name" type="text" name="name"
-                                        data-constraints="@Required">
-                                </div>
+                    <div class="col-lg-9">
+                        <form role="form" method="post" action="contact">
+                            <div class="form-group has-feedback ">
+                                <label for="form_lastname">NOM</label>
+                                 <input type="text" name="lastname"
+                                    id="form_lastname" value="" class="form-control" placeholder="Nom">
+                             </div>
+
+                            <div class="form-group ">
+                                <label for="form_firstname">Prénom</label>
+                                <input type="text" name="firstname"
+                                    id="form_firstname" value="" class="form-control" placeholder="Prenom">
                             </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-email">Your Email * </label>
-                                    <input class="form-input" id="contact-email" type="email" name="email"
-                                        data-constraints="@Email @Required">
-                                </div>
+
+                            <div class="form-group has-feedback pseudoForm">
+                                <label for="form_pseudo">Pseudo</label>
+                                <input type="text" name="pseudo"
+                                    id="form_pseudo" value="" class="form-control" placeholder="Pseudonyme">
                             </div>
-                            <div class="col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-phone">Your Phone </label>
-                                    <input class="form-input" id="contact-phone" type="text" name="phone"
-                                        data-constraints="@Numeric @Required">
-                                </div>
+                            <div class="form-group has-feedback ">
+                                <label for="form_email">E-mail</label>
+                                <input type="text" name="email"
+                                    id="form_email" value="" class="form-control" placeholder="text@exemple.fr">
                             </div>
-                            <div class="col-12">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-message">Your Message * </label>
-                                    <textarea class="form-input" id="contact-message" name="message"
-                                        data-constraints="@Required"></textarea>
-                                </div>
-                                <div class="form-button text-center">
-                                    <button class="button button-primary button-circle" type="submit">Send
-                                        Message</button>
-                                </div>
+                            <div class="form-group has-feedback ">
+                                <label for="form_phone">Téléphone</label>
+                                <input type="text" name="phone"
+                                    id="form_phone" value="" class="form-control" placeholder="06 00 00 00 00">
                             </div>
+
+                            <div class="form-group has-feedback ">
+                                <label for="form_subject">Objet</label>
+                                <select name="subject" id="form_subject"
+                                    class="form-control">
+                                    <option>Demande d'information générale</option>
+                                    <option>Demande d'information tarifaire</option>
+                                    <option>Proposition commerciale</option>
+                                    <option>Recrutement</option>
+                                    <option>Autre</option>
+                                </select> </div>
+                            <div class="form-group has-feedback ">
+                                <label for="form_message">Message</label> <textarea name="message"
+                                    id="form_message" class="form-control" rows="6"></textarea> </div>
+                            <br>
+                            <div class="form-button text-center">
+                                <button class="button button-primary button-circle" type="reset">Annuler</button>
+                                <button class="button button-primary button-circle" type="submit">Envoyer</button>
+                            </div>
+                          
                         </form>
                     </div>
+                  
                 </div>
             </div>
         </section>
@@ -250,7 +266,7 @@
                         data-description="9870 St Vincent Place, Glasgow" data-icon="./assets/images/gmap_marker.png"
                         data-icon-active="./assets/images/gmap_marker_active.png"></li>
                 </ul>
-            </div>
+            </div> 
         </section>
         <!-- Page Footer-->
         <footer class="section footer-classic context-dark bg-gray-700">
@@ -290,6 +306,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-3">
                             <h5 class="footer-title">newsletter</h5>
+                         
                             <!-- RD Mailform-->
                             <form class="rd-mailform text-left" data-form-output="form-output-global"
                                 data-form-type="contact" method="post" action="bat/rd-mailform.php">
