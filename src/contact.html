@@ -45,146 +45,124 @@
         </div>
     </div>
     <div class="page">
-        <!-- Page Header-->
-        <header class="section page-header header-transparent">
-            <!-- RD Navbar-->
-            <div class="rd-navbar-wrap">
-                <nav class="rd-navbar rd-navbar-classic rd-navbar-classic-dark" data-layout="rd-navbar-fixed"
-                    data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
-                    data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed"
-                    data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
-                    data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px"
-                    data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true"
-                    data-xl-stick-up="true" data-xxl-stick-up="true">
-                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
-                        data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
-                    <div class="rd-navbar-aside-outer rd-navbar-collapse bg-secondary">
-                        <div class="rd-navbar-aside">
-                            <ul class="list-inline list-inline-md">
-                                <li>
-                                    <div class="unit unit-spacing-xs align-items-center">
-                                        <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
-                                        <div class="unit-body"><a href="tel:#">1-800-1234-5671</a></div>
+         <!-- RD Navbar-->
+         <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-classic rd-navbar-classic-dark" data-layout="rd-navbar-fixed"
+                data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+                data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed"
+                data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px"
+                data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true"
+                data-xl-stick-up="true" data-xxl-stick-up="true">
+                <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                    data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <div class="rd-navbar-aside-outer rd-navbar-collapse bg-secondary">
+                    <div class="rd-navbar-aside">
+                        <ul class="list-inline list-inline-md">
+                            <li>
+                                <div class="unit unit-spacing-xs align-items-center">
+                                    <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
+                                    <div class="unit-body"><a href="tel:{{site.phone}}">{{site.phone}}</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit unit-spacing-xs align-items-center">
+                                    <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
+                                    <div class="unit-body"><a href="mailto:{{site.email}}">{{site.email}} </a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit unit-spacing-xs align-items-center">
+                                    <div class="unit-left"><span class="icon text-middle fa-map-marker"></span>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="unit unit-spacing-xs align-items-center">
-                                        <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
-                                        <div class="unit-body"><a href="mailto:#">info@demolink.org </a></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="unit unit-spacing-xs align-items-center">
-                                        <div class="unit-left"><span class="icon text-middle fa-map-marker"></span>
-                                        </div>
-                                        <div class="unit-body"><a href="#">121 Wall St., New York, NY, USA</a></div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="rd-navbar-soc list-inline list-inline-sm">
-                                <li class="list-inline-item"><a class="icon fa-linkedin" href="#"></a></li>
-                                <li class="list-inline-item"><a class="icon fa-twitter" href="#"></a></li>
-                                <li class="list-inline-item"><a class="icon fa-facebook-f" href="#"></a></li>
-                                <li class="list-inline-item"><a class="icon fa-instagram" href="#"></a></li>
-                            </ul>
-                        </div>
+                                    <div class="unit-body"><a href="#">{{site.address}}</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="rd-navbar-soc list-inline list-inline-sm">
+                            <li class="list-inline-item"><a class="icon fa-linkedin" href="#"></a></li>
+                            <li class="list-inline-item"><a class="icon fa-twitter" href="#"></a></li>
+                            <li class="list-inline-item"><a class="icon fa-facebook-f" href="#"></a></li>
+                            <li class="list-inline-item"><a class="icon fa-instagram" href="#"></a></li>
+                        </ul>
                     </div>
-                    <div class="rd-navbar-main-outer">
-                        <div class="rd-navbar-main">
-                            <!-- RD Navbar Panel-->
-                            <div class="rd-navbar-panel">
-                                <!-- RD Navbar Toggle-->
-                                <button class="rd-navbar-toggle"
-                                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                                <!-- RD Navbar Brand-->
-                                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
-                                            class="brand-logo-dark" src="./assets/images/logo-default-159x40.png" alt=""
-                                            width="159" height="40"
-                                            srcset="./assets/images/logo-default-318x80.png 2x" /><img
-                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png"
-                                            alt="" width="159" height="40"
-                                            srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
-                                </div>
+                </div>
+                <div class="rd-navbar-main-outer">
+                    <div class="rd-navbar-main">
+                        <!-- RD Navbar Panel-->
+                        <div class="rd-navbar-panel">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle"
+                                data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
+                                        class="brand-logo-dark" src="./assets/images/logo-default-159x40.png" alt=""
+                                        width="159" height="40"
+                                        srcset="./assets/images/logo-default-318x80.png 2x" /><img
+                                        class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png"
+                                        alt="" width="159" height="40"
+                                        srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
                             </div>
-                            <div class="rd-navbar-main-element">
-                                <div class="rd-navbar-nav-wrap">
-                                    <!-- RD Navbar Nav-->
-                                    <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Services</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="single-service.html">Single Service</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link"
-                                                href="practice-areas.html">Practice Areas</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">News</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="single-post.html">Single Post</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="buttons.html">Buttons</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="forms.html">Forms</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="grid-system.html">Grid System</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="progress-bars.html">Progress Bars</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="tables.html">Tables</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="tabs-and-accordions.html">Tabs and Accordions</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="typography.html">Typography</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="privacy-policy.html">Privacy Policy</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link"
-                                                href="contacts.html">Contacts</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- RD Navbar Search-->
-                                <div class="rd-navbar-search">
-                                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2"
-                                        data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
-                                    <form class="rd-search" action="search-results.html"
-                                        data-search-live="rd-search-results-live" method="GET">
-                                        <div class="form-wrap">
-                                            <label class="form-label" for="rd-navbar-search-form-input">Search</label>
-                                            <input class="rd-navbar-search-form-input form-input"
-                                                id="rd-navbar-search-form-input" type="text" name="s"
-                                                autocomplete="off">
-                                            <div class="rd-search-results-live" id="rd-search-results-live"></div>
-                                        </div>
-                                        <button class="rd-search-form-submit fa-search" type="submit"></button>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="rd-navbar-main-element">
+                            <div class="rd-navbar-nav-wrap">
+                                <!-- RD Navbar Nav-->
+                                <ul class="rd-navbar-nav">
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Accueil</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">Nos formules</a>
+                                        <!-- RD Navbar Dropdown-->
+                                        <ul class="rd-menu rd-navbar-dropdown">
+                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                    href="single-post.html">Nos formules</a>
+                                            </li>
+                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                    href="single-post.html">Monte-Meubles</a>
+                                            </li>
+                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                    href="single-post.html">Accessoires</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">Notre
+                                            entreprise</a>
+                                    </li>
+
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="devis.html">Devis en
+                                            ligne</a>
+                                    </li>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- RD Navbar Search-->
+                            <div class="rd-navbar-search">
+                                <button class="rd-navbar-search-toggle rd-navbar-fixed-element-2"
+                                    data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                                <form class="rd-search" action="search-results.html"
+                                    data-search-live="rd-search-results-live" method="GET">
+                                    <div class="form-wrap">
+                                        <label class="form-label" for="rd-navbar-search-form-input">Search</label>
+                                        <input class="rd-navbar-search-form-input form-input"
+                                            id="rd-navbar-search-form-input" type="text" name="s"
+                                            autocomplete="off">
+                                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                                    </div>
+                                    <button class="rd-search-form-submit fa-search" type="submit"></button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
         <section class="breadcrumbs-custom bg-image context-dark"
             style="background-image: url(./assets/images/breadcrumbs-bg.jpg);">
             <div class="container">
                 <h4 class="breadcrumbs-custom-title">Contacts</h4>
                 <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li class="active">Contacts</li>
                 </ul>
             </div>
@@ -194,7 +172,7 @@
                 <div class="row row-50 justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center">
-                            <h2>Get in Touch</h2>
+                            <h2>Entrer en contact</h2>
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -241,9 +219,16 @@
                                 <label for="form_message">Message</label> <textarea name="message"
                                     id="form_message" class="form-control" rows="6"></textarea> </div>
                             <br>
-                            <div class="form-button text-center">
-                                <button class="button button-primary button-circle" type="reset">Annuler</button>
-                                <button class="button button-primary button-circle" type="submit">Envoyer</button>
+                            <div class="form-button text-center" style="display: flex; align-content: center;">
+                                <div>
+                                    <button class="button button-primary button-circle" type="reset">Annuler</button>
+                                </div>
+
+                                <div>
+                                    <button class="button button-primary button-circle" type="submit">Envoyer</button>
+                                </div>
+                               
+                               
                             </div>
                           
                         </form>
