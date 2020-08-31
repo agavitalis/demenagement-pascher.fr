@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>Practice Areas</title>
+    <title>monte-meubles</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,6 @@
         </div>
     </div>
     <div class="page">
-        <!-- Page Header-->
         <header class="section page-header header-transparent">
             <!-- RD Navbar-->
             <div class="rd-navbar-wrap">
@@ -64,20 +63,20 @@
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
-                                        <div class="unit-body"><a href="tel:#">1-800-1234-5671</a></div>
+                                        <div class="unit-body"><a href="tel:{{site.phone}}">{{site.phone}}</a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><span class="icon text-middle fa-envelope"></span></div>
-                                        <div class="unit-body"><a href="mailto:#">info@demolink.org </a></div>
+                                        <div class="unit-body"><a href="mailto:{{site.email}}">{{site.email}} </a></div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="unit unit-spacing-xs align-items-center">
                                         <div class="unit-left"><span class="icon text-middle fa-map-marker"></span>
                                         </div>
-                                        <div class="unit-body"><a href="#">121 Wall St., New York, NY, USA</a></div>
+                                        <div class="unit-body"><a href="#">{{site.address}}</a></div>
                                     </div>
                                 </li>
                             </ul>
@@ -98,59 +97,43 @@
                                     data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
-                                            class="brand-logo-dark" src="./assets/images/logo-default-159x40.png" alt=""
-                                            width="159" height="40" srcset="./assets/images/logo-default-318x80.png 2x" /><img
-                                            class="brand-logo-light" src="./assets/images/logo-inverse-159x40.png" alt=""
-                                            width="159" height="40" srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
+                                            class="brand-logo-dark" src="./assets/images/logo.png" alt=""
+                                            width="159" height="40"
+                                            srcset="./assets/images/logo-default-318x80.png 2x" /><img
+                                            class="brand-logo-light" src="./assets/images/logo.png"
+                                            alt="" width="159" height="40"
+                                            srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
                                     <!-- RD Navbar Nav-->
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Accueil</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="services.html">Services</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">Nos formules</a>
                                             <!-- RD Navbar Dropdown-->
                                             <ul class="rd-menu rd-navbar-dropdown">
                                                 <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="single-service.html">Single Service</a></li>
+                                                        href="single-post.html">Nos formules</a>
+                                                </li>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                        href="single-post.html">Monte-Meubles</a>
+                                                </li>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
+                                                        href="single-post.html">Accessoires</a>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li class="rd-nav-item active"><a class="rd-nav-link"
-                                                href="practice-areas.html">Practice Areas</a>
+
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">Notre
+                                                entreprise</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="news.html">News</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="single-post.html">Single Post</a></li>
-                                            </ul>
+
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="devis.html">Devis en
+                                                ligne</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                                            <!-- RD Navbar Dropdown-->
-                                            <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="buttons.html">Buttons</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="forms.html">Forms</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="grid-system.html">Grid System</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="progress-bars.html">Progress Bars</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="tables.html">Tables</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="tabs-and-accordions.html">Tabs and Accordions</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="typography.html">Typography</a></li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link"
-                                                        href="privacy-policy.html">Privacy Policy</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -179,178 +162,192 @@
         <section class="breadcrumbs-custom bg-image context-dark"
             style="background-image: url(./assets/images/breadcrumbs-bg.jpg);">
             <div class="container">
-                <h4 class="breadcrumbs-custom-title">Practice Areas</h4>
+                <h4 class="breadcrumbs-custom-title">Monte-Meubles</h4>
                 <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Practice Areas</li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="active">monte-meubles</li>
                 </ul>
             </div>
         </section>
+
+        </section>
+
         <section class="bg-default section-md">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>Our Legal Practice Areas</h2>
+                    <h2>Nos formules pour monter vos meubles</h2>
+                    <p>
+                        Si vous avez besoin d'aide pour votre déménagement nos formules sont les plus adaptées.
+                        N'hésitez pas à nous solliciter pour tous besoins en matériels (Scotch, cartons, papiers
+                        bulles...)
+
+                        Les prix conclus entre les deux parties pour la mise à disposition du matériel conclus la
+                        prestation dans un rayon de 10 km autour de Paris (au-delà des 10 km, supplément kilométrique).
+                        Les monte-meubles mis à disposition seront adaptés aux besoins du client, de l'échelle
+                        emboitable pour les petits accès, à l'autoportée de 33 mètres sur camion. De 200 kg à 400 kg
+                        chargent utile.
+                    </p>
                 </div>
-                <div class="row row-30">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-car"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Automotive / Tire Defects</a>
-                                </h4>
-                                <p>We aim to support families in resolving their own disputes. We ensure professional
-                                    consultancy and result.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-briefcase-2"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Business Litigation</a></h4>
-                                <p>Professional help with financial, commercial, tax disputes and other complex business
-                                    issues.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-home"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Real Estate Law</a></h4>
-                                <p>Your civil rights will be defended and represented on the highest level with the best
-                                    outcome.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-love"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Well Planners</a></h4>
-                                <p>We understand how to handle the complex statutory and contractual issues that
-                                    frequently arise in claims.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-document-edit"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Lawyer Notes</a></h4>
-                                <p>Legalor offers consultancy services and asset management, bringing a new vision to
-                                    the world of investment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-book"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Corporate Fraud</a></h4>
-                                <p>We work in an open dialogue with you in order to devise the strategy which will best
-                                    serve your interests.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-lock"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Taxation &amp; Accounts</a>
-                                </h4>
-                                <p>Legalor offers consultancy services and asset management, bringing a new vision to
-                                    the world of investment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-chat"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Justice Fight</a></h4>
-                                <p>We work in an open dialogue with you in order to devise the strategy which will best
-                                    serve your interests.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="block-icon-modern">
-                            <div class="icon-figure"><span class="icon icon-xl thin-icon-user"></span></div>
-                            <div class="block-icon-caption">
-                                <h4 class="block-icon-title"><a href="single-service.html">Family Law</a></h4>
-                                <p>We aim to support families in resolving their own disputes. We ensure professional
-                                    consultancy and result.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
-        <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-4.jpg">
+
+        <section class="section section-md bg-default">
+            <div class="container-fluid grid-demo grid-demo-bordered">
+                <div class="row">
+                    <div class="col-4">
+                        <h6>1/3</h6>
+                        <div class="container">
+
+                            <h3>ECO+</h3>
+                            <p>790€</p>
+                            <ul class="list-marked">
+                                <li>Location de camion à partir de 20m³ </li>
+                                <li>Emballage et déballage des vêtements sous penderie</li>
+                                <li>Démontage et remontage des meubles </li>
+                                <li>Protection des meubles et électroménager</li>
+                                <li>Protection des matelas, sommiers et canapés </li>
+                                <li>Assurance comprise 15 000€ </li>
+                                <li>Transport et manutention pour chargement et déchargement </li>
+                            </ul>
+                            <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h6>2/3</h6>
+                        <div class="container">
+
+                            <h3>CONFORT</h3>
+                            <p>890€</p>
+                            <ul class="list-marked">
+                                <li>Location de camion à partir de 20m³ </li>
+                                <li>Emballage et déballage des vêtements sous penderie</li>
+                                <li>Démontage et remontage des meubles </li>
+                                <li>Protection des meubles et électroménager</li>
+                                <li>Protection des matelas, sommiers et canapés </li>
+                                <li>Assurance comprise 15 000€ </li>
+                                <li>Transport et manutention pour chargement et déchargement </li>
+                            </ul>
+                            <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h6>3/3</h6>
+                        <div class="container">
+
+                            <h3>PREMIUM</h3>
+                            <p>1090€</p>
+                            <ul class="list-marked">
+                                <li>Location de camion à partir de 20m³ </li>
+                                <li>Emballage et déballage des vêtements sous penderie</li>
+                                <li>Démontage et remontage des meubles </li>
+                                <li>Protection des meubles et électroménager</li>
+                                <li>Protection des matelas, sommiers et canapés </li>
+                                <li>Assurance comprise 15 000€ </li>
+                                <li>Transport et manutention pour chargement et déchargement </li>
+                            </ul>
+                            <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-2.jpg">
             <div class="parallax-content section-md context-dark text-center bg-gray-700-filter-70">
                 <div class="container">
-                    <div class="row row-30 justify-content-center">
+                    <div class="row row-50 justify-content-center">
                         <div class="col-12">
                             <div class="section-title">
-                                <h2>Want to Learn More About How We Help<span
-                                        class="d-block heading-1 text-italic">Clients in Risk?</span></h2>
+                                <h2>What Our Clients Say </h2>
                             </div>
                         </div>
-                        <div class="col-md-8 col-lg-6">
-                            <p>Attract thousands of individuals and businesses, all of whom (98%) have successfully
-                                dealt with their legal conundrums with our timely…</p><a
-                                class="button button-circle button-primary" href="#">Free Consultation </a>
+                        <div class="col-12 col-lg-10">
+                            <!-- Owl Carousel-->
+                            <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false"
+                                data-stage-padding="15" data-loop="true" data-autoplay="true" data-margin="30"
+                                data-mouse-drag="false">
+                                <div class="block-testimonials-classic">
+                                    <div class="block-testimonials-classic-figure"><img
+                                            src="./assets/images/user-1-100x100.jpg" alt="" width="100" height="100" />
+                                    </div>
+                                    <div class="block-testimonials-classic-caption">
+                                        <p>Some time ago our company has gone through a very harsh merger & acquisition
+                                            process, which left us felt questioning our business partners. But thanks to
+                                            this law firm, we were finally able to resolve our situation and take our
+                                            company back! Their strategy on our case was quite original but it worked
+                                            and I couldn’t wish for more. Thank you!</p>
+                                    </div>
+                                    <div class="block-testimonials-classic-footer">
+                                        <h4>Leticia Lopez</h4>
+                                        <p class="big">Client</p>
+                                    </div>
+                                </div>
+                                <div class="block-testimonials-classic">
+                                    <div class="block-testimonials-classic-figure"><img
+                                            src="./assets/images/user-2-100x100.jpg" alt="" width="100" height="100" />
+                                    </div>
+                                    <div class="block-testimonials-classic-caption">
+                                        <p>Business litigation has always been what our competitors were using to
+                                            suppress us… But as soon as we’ve hired this law firm, which by the way had
+                                            fees 5 times lower than the one our competitors paid to their lawyers, we
+                                            finally had all the disputes resolved in our favor! You’ve done a great job
+                                            and I am glad to recommend your firm.</p>
+                                    </div>
+                                    <div class="block-testimonials-classic-footer">
+                                        <h4>Sam McMillan</h4>
+                                        <p class="big">Client</p>
+                                    </div>
+                                </div>
+                                <div class="block-testimonials-classic">
+                                    <div class="block-testimonials-classic-figure"><img
+                                            src="./assets/images/user-3-100x100.jpg" alt="" width="100" height="100" />
+                                    </div>
+                                    <div class="block-testimonials-classic-caption">
+                                        <p>As the one who recently suffered from the FELA (Federal Employers’ Liability
+                                            Act Claims) related issues, I’ve been desperate to find a firm who could
+                                            have won my case… Then I found these guys! Finally, 3 months later the truth
+                                            and the law prevailed, all thanks to this firm’s lawyers diligence! Thank
+                                            you for the great job you’ve done!</p>
+                                    </div>
+                                    <div class="block-testimonials-classic-footer">
+                                        <h4>Jane Smith</h4>
+                                        <p class="big">Client</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-default section-md">
+        <section class="bg-default section-md text-center">
             <div class="container">
-                <div class="row row-50 justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h2>Request a Free Legal Consultation</h2>
+                <div class="row row-30 row-bordered align-items-center">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="block-partners"><img src="./assets/images/ref1.png" alt="" width="135"
+                                height="102" />
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        <!-- RD Mailform-->
-                        <form class="rd-mailform text-left row row-20" data-form-output="form-output-global"
-                            data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-name">Your Name * </label>
-                                    <input class="form-input" id="contact-name" type="text" name="name"
-                                        data-constraints="@Required">
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-email">Your Email * </label>
-                                    <input class="form-input" id="contact-email" type="email" name="email"
-                                        data-constraints="@Email @Required">
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-phone">Your Phone </label>
-                                    <input class="form-input" id="contact-phone" type="text" name="phone"
-                                        data-constraints="@Numeric @Required">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-message">Your Message * </label>
-                                    <textarea class="form-input" id="contact-message" name="message"
-                                        data-constraints="@Required"></textarea>
-                                </div>
-                                <div class="form-button text-center">
-                                    <button class="button button-primary button-circle" type="submit">Send
-                                        Message</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="block-partners"><img src="./assets/images/ref2.png" alt="" width="160"
+                                height="76" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="block-partners"><img src="./assets/images/ref3.png" alt="" width="144"
+                                height="73" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="block-partners"><img src="./assets/images/ref4.png" alt="" width="141"
+                                height="82" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -360,7 +357,7 @@
                 <div class="container">
                     <div class="row row-50">
                         <div class="col-sm-6 col-lg-3"><a class="footer-logo" href="index.html"><img
-                                    src="./assets/images/logo-inverse-159x40.png" alt="" width="159" height="40" /></a>
+                                    src="./assets/images/logo.png" alt="" width="159" height="40" /></a>
                             <p>If you or your business is facing a legal challenge that calls for sound advice, contact
                                 us today to arrange a free consultation with an attorney.</p>
                         </div>
