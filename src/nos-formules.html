@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /nos-formules
+---
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 
@@ -97,12 +101,10 @@
                                     data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
-                                            class="brand-logo-dark" src="./assets/images/logo.png" alt=""
-                                            width="159" height="40"
-                                            srcset="./assets/images/logo-default-318x80.png 2x" /><img
-                                            class="brand-logo-light" src="./assets/images/logo.png"
-                                            alt="" width="159" height="40"
-                                            srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
+                                            class="brand-logo-dark" src="./assets/images/logo.png" alt="" width="159"
+                                            height="40" srcset="./assets/images/logo-default-318x80.png 2x" /><img
+                                            class="brand-logo-light" src="./assets/images/logo.png" alt="" width="159"
+                                            height="40" srcset="./assets/images/logo-inverse-318x80.png 2x" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
@@ -261,13 +263,13 @@
                             <h3>ECO+</h3>
                             <p>790€</p>
                             <ul class="list-marked">
-                                <li>Location de camion à partir de 20m³   </li>
+                                <li>Location de camion à partir de 20m³ </li>
                                 <li>Emballage et déballage des vêtements sous penderie</li>
                                 <li>Démontage et remontage des meubles </li>
                                 <li>Protection des meubles et électroménager</li>
                                 <li>Protection des matelas, sommiers et canapés </li>
                                 <li>Assurance comprise 15 000€ </li>
-                                <li>Transport et manutention pour chargement et déchargement  </li>
+                                <li>Transport et manutention pour chargement et déchargement </li>
                             </ul>
                             <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
 
@@ -280,13 +282,15 @@
                             <h3>CONFORT</h3>
                             <p>890€</p>
                             <ul class="list-marked">
-                                <li>Location de camion à partir de 20m³   </li>
+                                <li>Location de camion à partir de 20m³ </li>
                                 <li>Emballage et déballage des vêtements sous penderie</li>
-                                <li>Démontage et remontage des meubles </li>
+                                <li>Démontage et remontage des meubles</li>
                                 <li>Protection des meubles et électroménager</li>
                                 <li>Protection des matelas, sommiers et canapés </li>
-                                <li>Assurance comprise 15 000€ </li>
-                                <li>Transport et manutention pour chargement et déchargement  </li>
+                                <li>Assurance comprise 30 000€</li>
+                                <li>Emballage et déballage des biens fragiles </li>
+                                <li>Emballage et déballage de la vaisselle fragile </li>
+                                <li>Décrochage et raccrochage mural </li>
                             </ul>
                             <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
 
@@ -299,13 +303,17 @@
                             <h3>PREMIUM</h3>
                             <p>1090€</p>
                             <ul class="list-marked">
-                                <li>Location de camion à partir de 20m³   </li>
+                                <li>Location de camion à partir de 20m³ </li>
                                 <li>Emballage et déballage des vêtements sous penderie</li>
                                 <li>Démontage et remontage des meubles </li>
                                 <li>Protection des meubles et électroménager</li>
                                 <li>Protection des matelas, sommiers et canapés </li>
-                                <li>Assurance comprise 15 000€ </li>
-                                <li>Transport et manutention pour chargement et déchargement  </li>
+                                <li>Assurance comprise 60 000€</li>
+                                <li>Emballage et déballage des biens fragiles </li>
+                                <li>Emballage et déballage de la vaisselle fragile </li>
+                                <li>Décrochage et raccrochage mural </li>
+                                <li>Débranchement des appareils électriques </li>
+                                <li>Emballage de l’ensemble du contenu </li>
                             </ul>
                             <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
 
@@ -411,6 +419,7 @@
                 </div>
             </div>
         </section>
+        <!-- Footer-->
         <footer class="section footer-classic context-dark bg-gray-700">
             <div class="footer-classic-top section-sm">
                 <div class="container">
@@ -421,11 +430,11 @@
                                 us today to arrange a free consultation with an attorney.</p>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">contact info</h5>
+                            <h5 class="footer-title">Informations de contact</h5>
                             <ul class="list">
-                                <li>4096 N Highland St, Arlington VA 32101, USA</li>
-                                <li><a href="mailto:#">mail@demolink.org</a></li>
-                                <li><a href="tel:#">1 800 1234 567</a></li>
+                                <li>{{site.address}}</li>
+                                <li><a href="mailto:#">{{site.email}}</a></li>
+                                <li><a href="tel:#">{{site.phone}}</a></li>
                             </ul>
                             <ul class="list">
                                 <li><span>Mon-Thu:</span> 9:30 am - 6:00 pm
@@ -437,32 +446,32 @@
                             </ul>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">Quick Links</h5>
+                            <h5 class="footer-title">Liens rapides</h5>
                             <ul class="link-list list-sm">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us </a></li>
-                                <li><a href="services.html">Services </a></li>
-                                <li><a href="news.html">News </a></li>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="about.html">À propos de nous </a></li>
+                                <li><a href="services.html">Prestations de service </a></li>
+                                <li><a href="devis.html">Devis </a></li>
                                 <li><a href="contacts.html">Contacts </a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">newsletter</h5>
+                            <h5 class="footer-title">Bulletin</h5>
                             <!-- RD Mailform-->
                             <form class="rd-mailform text-left" data-form-output="form-output-global"
                                 data-form-type="contact" method="post" action="bat/rd-mailform.php">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="footer-email">Your Email Address</label>
+                                    <label class="form-label" for="footer-email">Votre adresse email</label>
                                     <input class="form-input" id="footer-email" type="email" name="email"
                                         data-constraints="@Email @Required">
                                 </div>
                                 <div class="form-button">
-                                    <button class="button button-circle button-default-outline" type="submit">Sign
-                                        Up</button>
+                                    <button class="button button-circle button-default-outline"
+                                        type="submit">S'inscrire</button>
                                 </div>
                             </form>
-                            <p>Be the first to find out about the latest legal news, updates, tips, and other
-                                information.</p>
+                            <p>Soyez le premier à découvrir les dernières actualités juridiques, mises à jour, astuces
+                                et autres informations.</p>
                         </div>
                     </div>
                 </div>
@@ -475,7 +484,7 @@
                     <div class="row row-30">
                         <div class="col-md-9 order-md-1">
                             <p class="rights"><span>&copy;&nbsp; </span><span
-                                    class="copyright-year"></span><span>&nbsp;</span><span>Legalor</span><span>.&nbsp;</span><span>All
+                                    class="copyright"></span><span>&nbsp;</span><span>Legalor</span><span>.&nbsp;</span><span>All
                                     rights reserved</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy
                                     Policy</a></p>
                         </div>
