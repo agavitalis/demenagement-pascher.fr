@@ -335,7 +335,7 @@ permalink: /
                     <div class="row row-50 justify-content-center">
                         <div class="col-12">
                             <div class="section-title">
-                                <h2>What Our Clients Say </h2>
+                                <h2>Ce que disent nos clients </h2>
                             </div>
                         </div>
                         <div class="col-12 col-lg-10">
@@ -424,64 +424,7 @@ permalink: /
                 </div>
             </div>
         </section>
-        <!-- Recent News-->
-        <section class="section-md bg-gray-700">
-            <div class="container">
-                <div class="row row-50">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h2>Recent News</h2>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <!-- Owl Carousel-->
-                        <div class="owl-carousel" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true"
-                            data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30"
-                            data-mouse-drag="false">
-                            <div class="post-classic"><a class="post-classic-tag" href="#">Legal</a>
-                                <h4 class="post-classic-title"><a href="single-post.html">Can You be Fined with $1600
-                                        for Missing a License Plate Decal?</a></h4>
-                                <div class="post-classic-text">
-                                    <p>Just recently a Texas municipal court judge had fined a woman $1,590 for a decal
-                                        on her car license plate being missing… Though just a few days after, she has
-                                        obviously…</p>
-                                </div>
-                                <ul class="post-classic-meta">
-                                    <li><a href="#">SOFIA HELIN</a></li>
-                                    <li><a href="#">SEPTEMBER 27, 2019</a></li>
-                                </ul><a class="post-classic-link" href="single-post.html">+</a>
-                            </div>
-                            <div class="post-classic"><a class="post-classic-tag" href="#">Legal</a>
-                                <h4 class="post-classic-title"><a href="single-post.html">Questions Answered About the
-                                        Length of a Personal Injury Claim</a></h4>
-                                <div class="post-classic-text">
-                                    <p>If you were involved in a Personal Injury Accident you probably have a lot of
-                                        questions, however, one of the most common questions that accident victims have
-                                        has to do…</p>
-                                </div>
-                                <ul class="post-classic-meta">
-                                    <li><a href="#">SOFIA HELIN</a></li>
-                                    <li><a href="#">SEPTEMBER 27, 2019</a></li>
-                                </ul><a class="post-classic-link" href="single-post.html">+</a>
-                            </div>
-                            <div class="post-classic"><a class="post-classic-tag" href="#">Legal</a>
-                                <h4 class="post-classic-title"><a href="single-post.html">Tips for Managing Workers’
-                                        Compensation Claims</a></h4>
-                                <div class="post-classic-text">
-                                    <p>Workers’ compensation claims are always time-consuming and stressful. Not only do
-                                        employers need to ensure their employees are treated fairly and properly, but
-                                        they also must…</p>
-                                </div>
-                                <ul class="post-classic-meta">
-                                    <li><a href="#">SOFIA HELIN</a></li>
-                                    <li><a href="#">SEPTEMBER 27, 2019</a></li>
-                                </ul><a class="post-classic-link" href="single-post.html">+</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
         <!-- Contact Form-->
         <section class="bg-default section-md">
             <div class="container">
@@ -497,34 +440,33 @@ permalink: /
                             data-form-type="contact" method="post" action="bat/rd-mailform.php">
                             <div class="col-sm-6 col-lg-4">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="contact-name">Your Name * </label>
+                                    <label class="form-label" for="contact-name">Votre Nom * </label>
                                     <input class="form-input" id="contact-name" type="text" name="name"
                                         data-constraints="@Required">
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="contact-email">Your Email * </label>
+                                    <label class="form-label" for="contact-email">Votre E-mail * </label>
                                     <input class="form-input" id="contact-email" type="email" name="email"
                                         data-constraints="@Email @Required">
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="contact-phone">Your Phone </label>
+                                    <label class="form-label" for="contact-phone">Ton Téléphone </label>
                                     <input class="form-input" id="contact-phone" type="text" name="phone"
                                         data-constraints="@Numeric @Required">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="contact-message">Your Message * </label>
+                                    <label class="form-label" for="contact-message">Votre Message * </label>
                                     <textarea class="form-input" id="contact-message" name="message"
                                         data-constraints="@Required"></textarea>
                                 </div>
                                 <div class="form-button text-center">
-                                    <button class="button button-primary button-circle" type="submit">Send
-                                        Message</button>
+                                    <button class="button button-primary button-circle" type="submit">Envoyer le message</button>
                                 </div>
                             </div>
                         </form>
@@ -543,11 +485,11 @@ permalink: /
                                 us today to arrange a free consultation with an attorney.</p>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">contact info</h5>
+                            <h5 class="footer-title">Informations de contact</h5>
                             <ul class="list">
-                                <li>4096 N Highland St, Arlington VA 32101, USA</li>
-                                <li><a href="mailto:#">mail@demolink.org</a></li>
-                                <li><a href="tel:#">1 800 1234 567</a></li>
+                                <li>{{site.address}}</li>
+                                <li><a href="mailto:#">{{site.email}}</a></li>
+                                <li><a href="tel:#">{{site.phone}}</a></li>
                             </ul>
                             <ul class="list">
                                 <li><span>Mon-Thu:</span> 9:30 am - 6:00 pm
@@ -559,32 +501,30 @@ permalink: /
                             </ul>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">Quick Links</h5>
+                            <h5 class="footer-title">Liens rapides</h5>
                             <ul class="link-list list-sm">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us </a></li>
-                                <li><a href="services.html">Services </a></li>
-                                <li><a href="news.html">News </a></li>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="about.html">À propos de nous </a></li>
+                                <li><a href="services.html">Prestations de service </a></li>
+                                <li><a href="devis.html">Devis </a></li>
                                 <li><a href="contacts.html">Contacts </a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">newsletter</h5>
+                            <h5 class="footer-title">Bulletin</h5>
                             <!-- RD Mailform-->
                             <form class="rd-mailform text-left" data-form-output="form-output-global"
                                 data-form-type="contact" method="post" action="bat/rd-mailform.php">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="footer-email">Your Email Address</label>
+                                    <label class="form-label" for="footer-email">Votre adresse email</label>
                                     <input class="form-input" id="footer-email" type="email" name="email"
                                         data-constraints="@Email @Required">
                                 </div>
                                 <div class="form-button">
-                                    <button class="button button-circle button-default-outline" type="submit">Sign
-                                        Up</button>
+                                    <button class="button button-circle button-default-outline" type="submit">S'inscrire</button>
                                 </div>
                             </form>
-                            <p>Be the first to find out about the latest legal news, updates, tips, and other
-                                information.</p>
+                            <p>Soyez le premier à découvrir les dernières actualités juridiques, mises à jour, astuces et autres informations.</p>
                         </div>
                     </div>
                 </div>
