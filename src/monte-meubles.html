@@ -1,3 +1,7 @@
+---
+layout: default
+permalink: /monte-meubles
+---
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
 
@@ -218,7 +222,7 @@
                         <div class="container">
 
                             <h3> <span>A partir du 6ème étage</span></h3>
-                            <p><h3 class="text-capitalize">Forfait horaire</h3></p>
+                            <h4 class="text-capitalize">Forfait horaire</h4>
                             <ul class="list-marked">
                                 <li>1/2 journée<i class="fa fa-long-arrow-right" aria-hidden="true"></i>320€ <sup>TTC</sup></li>
                                 <li>1 journée<i class="fa fa-long-arrow-right" aria-hidden="true"></i>490€ <sup>TTC</sup></li>
@@ -234,18 +238,14 @@
                         <h6>3/3</h6>
                         <div class="container">
 
-                            <h3>PREMIUM</h3>
-                            <p>1090€</p>
-                            <ul class="list-marked">
-                                <li>Location de camion à partir de 20m³ </li>
-                                <li>Emballage et déballage des vêtements sous penderie</li>
-                                <li>Démontage et remontage des meubles </li>
-                                <li>Protection des meubles et électroménager</li>
-                                <li>Protection des matelas, sommiers et canapés </li>
-                                <li>Assurance comprise 15 000€ </li>
-                                <li>Transport et manutention pour chargement et déchargement </li>
-                            </ul>
-                            <a class="button button-circle button-primary" href="contact.html">Je réserve</a>
+                            <h3><i class="fa fa-exchange" aria-hidden="true"></i></h3>
+                            <h4 class="text-capitalize">Forfait Passage</h4>
+                            <h3 class="price">
+                                145€ <sup>TTC</sup>
+                            </h3>
+                           
+                            <a class="button button-circle button-primary" href="devis.html">Devis en ligne</a>
+
 
                         </div>
                     </div>
@@ -349,7 +349,8 @@
                 </div>
             </div>
         </section>
-        <footer class="section footer-classic context-dark bg-gray-700">
+          <!-- Footer-->
+          <footer class="section footer-classic context-dark bg-gray-700">
             <div class="footer-classic-top section-sm">
                 <div class="container">
                     <div class="row row-50">
@@ -359,11 +360,11 @@
                                 us today to arrange a free consultation with an attorney.</p>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">contact info</h5>
+                            <h5 class="footer-title">Informations de contact</h5>
                             <ul class="list">
-                                <li>4096 N Highland St, Arlington VA 32101, USA</li>
-                                <li><a href="mailto:#">mail@demolink.org</a></li>
-                                <li><a href="tel:#">1 800 1234 567</a></li>
+                                <li>{{site.address}}</li>
+                                <li><a href="mailto:#">{{site.email}}</a></li>
+                                <li><a href="tel:#">{{site.phone}}</a></li>
                             </ul>
                             <ul class="list">
                                 <li><span>Mon-Thu:</span> 9:30 am - 6:00 pm
@@ -375,32 +376,32 @@
                             </ul>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">Quick Links</h5>
+                            <h5 class="footer-title">Liens rapides</h5>
                             <ul class="link-list list-sm">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us </a></li>
-                                <li><a href="services.html">Services </a></li>
-                                <li><a href="news.html">News </a></li>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="about.html">À propos de nous </a></li>
+                                <li><a href="services.html">Prestations de service </a></li>
+                                <li><a href="devis.html">Devis </a></li>
                                 <li><a href="contacts.html">Contacts </a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h5 class="footer-title">newsletter</h5>
+                            <h5 class="footer-title">Bulletin</h5>
                             <!-- RD Mailform-->
                             <form class="rd-mailform text-left" data-form-output="form-output-global"
                                 data-form-type="contact" method="post" action="bat/rd-mailform.php">
                                 <div class="form-wrap">
-                                    <label class="form-label" for="footer-email">Your Email Address</label>
+                                    <label class="form-label" for="footer-email">Votre adresse email</label>
                                     <input class="form-input" id="footer-email" type="email" name="email"
                                         data-constraints="@Email @Required">
                                 </div>
                                 <div class="form-button">
-                                    <button class="button button-circle button-default-outline" type="submit">Sign
-                                        Up</button>
+                                    <button class="button button-circle button-default-outline"
+                                        type="submit">S'inscrire</button>
                                 </div>
                             </form>
-                            <p>Be the first to find out about the latest legal news, updates, tips, and other
-                                information.</p>
+                            <p>Soyez le premier à découvrir les dernières actualités juridiques, mises à jour, astuces
+                                et autres informations.</p>
                         </div>
                     </div>
                 </div>
@@ -413,7 +414,7 @@
                     <div class="row row-30">
                         <div class="col-md-9 order-md-1">
                             <p class="rights"><span>&copy;&nbsp; </span><span
-                                    class="copyright-year"></span><span>&nbsp;</span><span>Legalor</span><span>.&nbsp;</span><span>All
+                                    class="copyright"></span><span>&nbsp;</span><span>Legalor</span><span>.&nbsp;</span><span>All
                                     rights reserved</span><span>.&nbsp;</span><a href="privacy-policy.html">Privacy
                                     Policy</a></p>
                         </div>
