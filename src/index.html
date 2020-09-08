@@ -2,314 +2,335 @@
 layout: default
 permalink: /
 ---
-    <div class="page">
-        {% include navbar.html %}
-        <!-- Swiper-->
-        <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="false"
-            data-simulate-touch="false" data-slide-effect="fade">
-            <div class="swiper-wrapper text-center text-lg-left">
-                <div class="swiper-slide" data-slide-bg="./assets/images/swiper-slide-1.jpg">
-                    <div class="swiper-slide-caption section-md">
-                        <div class="container">
-                            <div class="row justify-content-lg-end">
-                                <div class="col-lg-7 col-xl-5">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Votre déménagement en
-                                        Île de France à<span class="text-italic">petits prix!</span></h1>
-                                        <a class="button button-primary button-circle" href="#"
-                                        data-caption-animate="fadeInUp" data-caption-delay="450">Nous Contacter</a>
-                                </div>
+<div class="page">
+    {% include navbar.html %}
+    <!-- Swiper-->
+    <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="false"
+        data-simulate-touch="false" data-slide-effect="fade">
+        <div class="swiper-wrapper text-center text-lg-left">
+            <div class="swiper-slide" data-slide-bg="./assets/images/banner.jpg">
+                <div class="swiper-slide-caption section-md">
+                    <div class="container">
+                        <div class="row justify-content-lg-end">
+                            <div class="col-lg-6 col-xl-6">
+                                <h1 id="header-welcome" data-caption-animate="fadeInUp" data-caption-delay="100">Votre
+                                    déménagement en
+                                    Île de France à petits prix!</h1>
+                                <a class="button button-primary " href="#" data-caption-animate="fadeInUp"
+                                    data-caption-delay="450">Nous Contacter</a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bg-default section-md pt-lg-0 section-relative">
-            <div class="container">
-                <div class="block-icon-modern-items">
-                    <div class="block-icon-modern block-icon-primary">
-                        <div class="icon-figure"><span class="icon icon-xl thin-icon-briefcase-2"></span></div>
-                        <div class="block-icon-caption">
-                            <h4 class="block-icon-title"><a href="single-service.html">Organisez votre déménagement pas cher en Île de France!</a></h4>
-                            <p>Besoin d’informations? Contactez-nous au 06 72 16 76 34.</p>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            <div class="container">
-                <div class="row row-30">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="section-title section-title-left">
-                            <h2 class="text-capitalize">Pour un <span class="text-italic text-primary">déménagement pas cher</span> et sur mesure 
-                                    
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-8 pt-lg-5">
-                        <p>
-                            Parce qu’un déménagement en Île de France ne devrait plus être une contrainte, notre entreprise vous propose les meilleurs prix en termes de déménagements ! Un nouveau départ s’offre à vous, nous sommes là pour veiller sur votre budget. Notre entreprise, Déménagement Pas Cher vous propose des formules à prix qui s’adaptent à tous les budgets et tous les besoins.
-                        </p>
-                        <a class="button button-circle button-primary" href="contact.html">Nous contacter</a>
+                            <div class="col-lg-6 col-xl-6">
+                                
+                                <h5>DEVIS EN LIGNE GRATUIT</h5>
+
+                                <form role="form" method="post" action="#pre-devis2">
+                                    <div class=" col-sm-12 " id="pre-devis2">
+                                        <div class="row pad1">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_zipcode1">Code postal de départ</label> <input
+                                                    type="text" name="zipcode1" id="form_zipcode1" value=""
+                                                    class="form-control" placeholder=""> </div>
+                                            <div class="form-group has-feedback " style="display:none;">
+                                                <label for="form_pseudo">Pseudo</label> <input type="text"
+                                                    name="pseudo" id="form_pseudo" value="" class="form-control"
+                                                    placeholder=""> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_zipcode2">Code postal d'arrivé</label> <input
+                                                    type="text" name="zipcode2" id="form_zipcode2" value=""
+                                                    class="form-control" placeholder=""> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_email">E-mail</label>
+                                                 <input type="text"
+                                                    name="email" id="form_email" value="" class="form-control"
+                                                    placeholder=""> </div>
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_phone">Téléphone</label> <input type="text"
+                                                    name="phone" id="form_phone" value="" class="form-control"
+                                                    placeholder=""> </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-12 text-center">
+                                        <button type="submit" name="devis" class="button2"><span>Envoyer</span>
+                                        </button>
+                                    </div>
+
+
+
+
+
+
+                                </form>
                             
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-1.jpg">
-            <div class="parallax-content section-md context-dark text-center bg-gray-700-filter-70">
-                <div class="container">
-                    <div class="row row-50">
-                        <div class="col-12">
-                            <div class="section-title text-white">
-                                <h2>Votre satisfaction, notre priorité!</h2>
-                                <p>Choisir un déménageur est une étape importante, bien que souvent stressante. Ce choix ne peut être pris à la légère, et la décision se fait majoritairement via les tarifs proposés par les différentes entreprises. Avec Déménagement Pas Cher , vous avez l'assurance de coûts maîtrisés et définis à l'avance.</p>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row row-30 row-bordered ">
-                                <div class="col-6 col-md-3">
-                                    <!-- Box counter-->
-                                    <article class="box-counter">
-                                        <div class="box-counter-main heading-2">
-                                            <div class="counter">1998</div>
-                                        </div>
-                                        <p class="box-counter-title text-white">ANNÉE <br> D'ÉTABLISSEMENT</p>
-                                    </article>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <!-- Box counter-->
-                                    <article class="box-counter">
-                                        <div class="box-counter-main heading-2">
-                                            <div class="counter">547</div>
-                                        </div>
-                                        <p class="box-counter-title text-white">Paquets <br> déplacés</p>
-                                    </article>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <!-- Box counter-->
-                                    <article class="box-counter">
-                                        <div class="box-counter-main heading-2">
-                                            <div class="counter">45</div><span>+</span>
-                                        </div>
-                                        <p class="box-counter-title text-white">Partenaires <br> d'affaires</p>
-                                    </article>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <!-- Box counter-->
-                                    <article class="box-counter">
-                                        <div class="box-counter-main heading-2">
-                                            <div class="counter">1500</div>
-                                        </div>
-                                        <p class="box-counter-title text-white">Client <br> de confiance</p>
-                                    </article>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="bg-default section-md">
+        </div>
+    </section>
+    <section class="bg-default section-md pt-lg-0 section-relative">
+        <div class="container">
+            <div class="block-icon-modern-items">
+                <div class="block-icon-modern block-icon-primary">
+                    <div class="icon-figure"><span class="icon icon-xl thin-icon-briefcase-2"></span></div>
+                    <div class="block-icon-caption">
+                        <h4 class="block-icon-title"><a href="single-service.html">Organisez votre déménagement pas cher
+                                en Île de France!</a></h4>
+                        <p>Besoin d’informations? Contactez-nous au 06 72 16 76 34.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-6 col-lg-4">
+                    <div class="section-title section-title-left">
+                        <h2 class="text-capitalize">Pour un <span class="text-italic text-primary">déménagement pas
+                                cher</span> et sur mesure
+
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-8 pt-lg-5">
+                    <p>
+                        Parce qu’un déménagement en Île de France ne devrait plus être une contrainte, notre entreprise
+                        vous propose les meilleurs prix en termes de déménagements ! Un nouveau départ s’offre à vous,
+                        nous sommes là pour veiller sur votre budget. Notre entreprise, Déménagement Pas Cher vous
+                        propose des formules à prix qui s’adaptent à tous les budgets et tous les besoins.
+                    </p>
+                    <div class="text-center mt-4">
+                        <a class="button  button-primary text-white" href="contact.html">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-1.jpg">
+        <div class="parallax-content section-md context-dark text-center bg-gray-700-filter-70">
             <div class="container">
-              <div class="row row-50">
-                <div class="col-md-6 col-lg-4">
-                  <div class="post-modern">
-                    <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/coins.jpg" alt="" width="370" height="300"></a></div>
-                    <div class="post-modern-caption text-center">
-                      
-                      <h4 class="post-modern-title"><a href="single-post.html">Des coûts maîtrisés</a></h4>
-                      <ul class="list-inline post-modern-meta list-inline-sm">
-                        <li class="list-inline-item"><a href="single-post.html">Avec Déménagement Pas Cher, pas de coûts cachés!</a></li>
-                       
-                      </ul>
-                      <div class="post-modern-text text-justify">
-                        <p>Notre entreprise Déménagement Pas Cher, c'est des formules sur mesure mais aussi des packages complets pour organiser votre déménagement le plus sereinement possible. Location de véhicules, démontage et remontage de meubles, transport et manutention, protection des biens fragiles, assurance, transport de matelas, canapés, sommiers... Des prestations complètes pour vous assurer tranquillité et sérénité le jour</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="post-modern">
-                    <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/demenageurs.jpg" alt="" width="370" height="300"></a></div>
-                    <div class="post-modern-caption text-center">
-                        <h4 class="post-modern-title"><a href="single-post.html">Des déménageurs professionnels</a></h4>
-                      <ul class="list-inline post-modern-meta list-inline-sm">
-                        <li class="list-inline-item"><a href="single-post.html">Leur expérience est au service de vos besoins</a></li>
-                        
-                      </ul>
-                     
-                      <div class="post-modern-text text-justify">
-                        <p>Les équipes de Déménagement Pas Cher vous assistent avec efficacité et habilité, grâce à une expérience de plusieurs années dans le domaine. Faites leur confiance pour transporter vos affaires et les amener dans votre nouvelle demeure, même les plus lourdes, les plus encombrantes ou les plus fragiles, le tout à petit prix. Demandez votre devis en ligne directement via notre formulaire.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="post-modern">
-                    <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/demenagement_pas_cher.jpg" alt="" width="370" height="300"></a></div>
-                    <div class="post-modern-caption text-center">
-                        <h4 class="post-modern-title"><a href="single-post.html">Besoin d'assistance?</a></h4>
-                        <ul class="list-inline post-modern-meta list-inline-sm">
-                            <li class="list-inline-item"><a href="single-post.html">Déménagement Pas Cher a la solution à vos problèmes!</a></li>
-                            
-                        </ul>
-                      
-                        <div class="post-modern-text text-justify">
-                            <p>Avec l'aide de nos équipes de déménageurs qualifiés, simplifiez-vous la vie et allégez votre charge de travail en leur confiant votre déménagement. Organisés et rigoureux en toute circonstance, ils sauront vous assister pour transférer vos affaires sur votre nouveau lieu de vie, tout en faisant attentions aux objets les plus fragiles, mais également en vous proposant des services de démontage/montage de meubles, emballage et déballage, location de camions, décrochage et raccrochage mural, protection du mobilier.</p>
+                <div class="row row-50">
+                    <div class="col-12">
+                        <div class="section-title text-white">
+                            <h2>Votre satisfaction, notre priorité!</h2>
+                            <p>Choisir un déménageur est une étape importante, bien que souvent stressante. Ce choix ne
+                                peut être pris à la légère, et la décision se fait majoritairement via les tarifs
+                                proposés par les différentes entreprises. Avec Déménagement Pas Cher , vous avez
+                                l'assurance de coûts maîtrisés et définis à l'avance.</p>
                         </div>
                     </div>
-                  </div>
-                </div>
-               
-              
-              </div>
-            </div>
-          </section>
-      
-        <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-2.jpg">
-            <div class="parallax-content section-md context-dark text-center bg-gray-700-filter-70">
-                <div class="container">
-                    <div class="row row-50 justify-content-center">
-                        <div class="col-12">
-                            <div class="section-title">
-                                <h2>Ce que disent nos clients </h2>
+                    <div class="col-12">
+                        <div class="row row-30 row-bordered ">
+                            <div class="col-6 col-md-3">
+                                <!-- Box counter-->
+                                <article class="box-counter">
+                                    <div class="box-counter-main heading-2">
+                                        <div class="counter">1998</div>
+                                    </div>
+                                    <p class="box-counter-title text-white">ANNÉE <br> D'ÉTABLISSEMENT</p>
+                                </article>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-10">
-                            <!-- Owl Carousel-->
-                            <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false"
-                                data-stage-padding="15" data-loop="true" data-autoplay="true" data-margin="30"
-                                data-mouse-drag="false">
-                                <div class="block-testimonials-classic">
-                                  
-                                    <div class="block-testimonials-classic-caption">
-                                        <p>Some time ago our company has gone through a very harsh merger & acquisition
-                                            process, which left us felt questioning our business partners. But thanks to
-                                            this law firm, we were finally able to resolve our situation and take our
-                                            company back! Their strategy on our case was quite original but it worked
-                                            and I couldn’t wish for more. Thank you!</p>
+                            <div class="col-6 col-md-3">
+                                <!-- Box counter-->
+                                <article class="box-counter">
+                                    <div class="box-counter-main heading-2">
+                                        <div class="counter">547</div>
                                     </div>
-                                    <div class="block-testimonials-classic-footer">
-                                        <h4>Leticia</h4>
-                                        
+                                    <p class="box-counter-title text-white">Paquets <br> déplacés</p>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <!-- Box counter-->
+                                <article class="box-counter">
+                                    <div class="box-counter-main heading-2">
+                                        <div class="counter">45</div><span>+</span>
                                     </div>
-                                </div>
-                                <div class="block-testimonials-classic">
-                                    
-                                    <div class="block-testimonials-classic-caption">
-                                        <p>Business litigation has always been what our competitors were using to
-                                            suppress us… But as soon as we’ve hired this law firm, which by the way had
-                                            fees 5 times lower than the one our competitors paid to their lawyers, we
-                                            finally had all the disputes resolved in our favor! You’ve done a great job
-                                            and I am glad to recommend your firm.</p>
+                                    <p class="box-counter-title text-white">Partenaires <br> d'affaires</p>
+                                </article>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <!-- Box counter-->
+                                <article class="box-counter">
+                                    <div class="box-counter-main heading-2">
+                                        <div class="counter">1500</div>
                                     </div>
-                                    <div class="block-testimonials-classic-footer">
-                                        <h4>Sam </h4>
-                                        
-                                    </div>
-                                </div>
-                                <div class="block-testimonials-classic">
-                                    
-                                    <div class="block-testimonials-classic-caption">
-                                        <p>As the one who recently suffered from the FELA (Federal Employers’ Liability
-                                            Act Claims) related issues, I’ve been desperate to find a firm who could
-                                            have won my case… Then I found these guys! Finally, 3 months later the truth
-                                            and the law prevailed, all thanks to this firm’s lawyers diligence! Thank
-                                            you for the great job you’ve done!</p>
-                                    </div>
-                                    <div class="block-testimonials-classic-footer">
-                                        <h4>Jane </h4>
-                                        
-                                    </div>
-                                </div>
+                                    <p class="box-counter-title text-white">Clients <br> de confiance</p>
+                                </article>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Partners-->
-        <section class="bg-default section-md text-center">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Ils nous ont fait confiance </h2>
-                </div>
-                <div class="row row-30 row-bordered align-items-center">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/ref1.png" alt="" width="135"
-                                height="102" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/ref2.png" alt="" width="160"
-                                height="76" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/ref3.png" alt="" width="144"
-                                height="73" />
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="block-partners"><img src="./assets/images/ref4.png" alt="" width="141"
-                                height="82" />
+        </div>
+    </section>
+    <section class="bg-default section-md">
+        <div class="container">
+            <div class="row row-50">
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-modern">
+                        <div class="post-modern-figure"><a href="single-post.html"><img src="./assets/images/coins.jpg"
+                                    alt="" width="370" height="300"></a></div>
+                        <div class="post-modern-caption text-center">
+
+                            <h4 class="post-modern-title"><a href="single-post.html">Des coûts maîtrisés</a></h4>
+                            <ul class="list-inline post-modern-meta list-inline-sm">
+                                <li class="list-inline-item"><a href="single-post.html">Avec Déménagement Pas Cher, pas
+                                        de coûts cachés!</a></li>
+
+                            </ul>
+                            <div class="post-modern-text text-justify">
+                                <p>Notre entreprise Déménagement Pas Cher, c'est des formules sur mesure mais aussi des
+                                    packages complets pour organiser votre déménagement le plus sereinement possible.
+                                    Location de véhicules, démontage et remontage de meubles, transport et manutention,
+                                    protection des biens fragiles, assurance, transport de matelas, canapés, sommiers...
+                                    Des prestations complètes pour vous assurer tranquillité et sérénité le jour</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-modern">
+                        <div class="post-modern-figure"><a href="single-post.html"><img
+                                    src="./assets/images/demenageurs.jpg" alt="" width="370" height="300"></a></div>
+                        <div class="post-modern-caption text-center">
+                            <h4 class="post-modern-title"><a href="single-post.html">Des déménageurs professionnels</a>
+                            </h4>
+                            <ul class="list-inline post-modern-meta list-inline-sm">
+                                <li class="list-inline-item"><a href="single-post.html">Leur expérience est au service
+                                        de vos besoins</a></li>
+
+                            </ul>
+
+                            <div class="post-modern-text text-justify">
+                                <p>Les équipes de Déménagement Pas Cher vous assistent avec efficacité et habilité,
+                                    grâce à une expérience de plusieurs années dans le domaine. Faites leur confiance
+                                    pour transporter vos affaires et les amener dans votre nouvelle demeure, même les
+                                    plus lourdes, les plus encombrantes ou les plus fragiles, le tout à petit prix.
+                                    Demandez votre devis en ligne directement via notre formulaire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="post-modern">
+                        <div class="post-modern-figure"><a href="single-post.html"><img
+                                    src="./assets/images/demenagement_pas_cher.jpg" alt="" width="370" height="300"></a>
+                        </div>
+                        <div class="post-modern-caption text-center">
+                            <h4 class="post-modern-title"><a href="single-post.html">Besoin d'assistance?</a></h4>
+                            <ul class="list-inline post-modern-meta list-inline-sm">
+                                <li class="list-inline-item"><a href="single-post.html">Déménagement Pas Cher a la
+                                        solution à vos problèmes!</a></li>
+
+                            </ul>
+
+                            <div class="post-modern-text text-justify">
+                                <p>Avec l'aide de nos équipes de déménageurs qualifiés, simplifiez-vous la vie et
+                                    allégez votre charge de travail en leur confiant votre déménagement. Organisés et
+                                    rigoureux en toute circonstance, ils sauront vous assister pour transférer vos
+                                    affaires sur votre nouveau lieu de vie, tout en faisant attentions aux objets les
+                                    plus fragiles, mais également en vous proposant des services de démontage/montage de
+                                    meubles, emballage et déballage, location de camions, décrochage et raccrochage
+                                    mural, protection du mobilier.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-        </section>
-       
-        <!-- Contact Form-->
-        <section class="bg-default section-md">
+        </div>
+    </section>
+
+    <section class="parallax-container" data-parallax-img="./assets/images/parallax-img-2.jpg">
+        <div class="parallax-content section-md context-dark text-center bg-gray-700-filter-70">
             <div class="container">
                 <div class="row row-50 justify-content-center">
                     <div class="col-12">
-                        <div class="section-title text-center">
-                            <h2>DEVIS EN LIGNE GRATUIT</h2>
+                        <div class="section-title">
+                            <h2>Ce que disent nos clients </h2>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        <!-- RD Mailform-->
-                        <form class="rd-mailform text-left row row-20" data-form-output="form-output-global"
-                            data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-name">Votre Nom * </label>
-                                    <input class="form-input" id="contact-name" type="text" name="name"
-                                        data-constraints="@Required">
+                    <div class="col-12 col-lg-10">
+                        <!-- Owl Carousel-->
+                        <div class="owl-carousel" data-items="1" data-dots="true" data-nav="false"
+                            data-stage-padding="15" data-loop="true" data-autoplay="true" data-margin="30"
+                            data-mouse-drag="false">
+                            <div class="block-testimonials-classic">
+
+                                <div class="block-testimonials-classic-caption">
+                                    <p>Some time ago our company has gone through a very harsh merger & acquisition
+                                        process, which left us felt questioning our business partners. But thanks to
+                                        this law firm, we were finally able to resolve our situation and take our
+                                        company back! Their strategy on our case was quite original but it worked
+                                        and I couldn’t wish for more. Thank you!</p>
+                                </div>
+                                <div class="block-testimonials-classic-footer">
+                                    <h4>Leticia</h4>
+
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-email">Votre E-mail * </label>
-                                    <input class="form-input" id="contact-email" type="email" name="email"
-                                        data-constraints="@Email @Required">
+                            <div class="block-testimonials-classic">
+
+                                <div class="block-testimonials-classic-caption">
+                                    <p>Business litigation has always been what our competitors were using to
+                                        suppress us… But as soon as we’ve hired this law firm, which by the way had
+                                        fees 5 times lower than the one our competitors paid to their lawyers, we
+                                        finally had all the disputes resolved in our favor! You’ve done a great job
+                                        and I am glad to recommend your firm.</p>
+                                </div>
+                                <div class="block-testimonials-classic-footer">
+                                    <h4>Sam </h4>
+
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-phone">Ton Téléphone </label>
-                                    <input class="form-input" id="contact-phone" type="text" name="phone"
-                                        data-constraints="@Numeric @Required">
+                            <div class="block-testimonials-classic">
+
+                                <div class="block-testimonials-classic-caption">
+                                    <p>As the one who recently suffered from the FELA (Federal Employers’ Liability
+                                        Act Claims) related issues, I’ve been desperate to find a firm who could
+                                        have won my case… Then I found these guys! Finally, 3 months later the truth
+                                        and the law prevailed, all thanks to this firm’s lawyers diligence! Thank
+                                        you for the great job you’ve done!</p>
+                                </div>
+                                <div class="block-testimonials-classic-footer">
+                                    <h4>Jane </h4>
+
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="form-wrap">
-                                    <label class="form-label" for="contact-message">Votre Message * </label>
-                                    <textarea class="form-input" id="contact-message" name="message"
-                                        data-constraints="@Required"></textarea>
-                                </div>
-                                <div class="form-button text-center">
-                                    <button class="button button-primary button-circle" type="submit">Envoyer le message</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        {% include footer.html %}
-    </div>
+        </div>
+    </section>
+    <!-- Partners-->
+    <section class="bg-default section-md text-center">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ils nous ont fait confiance </h2>
+            </div>
+            <div class="row row-30 row-bordered align-items-center">
+                <div class="col-sm-6 col-md-3">
+                    <div class="block-partners"><img src="./assets/images/ref1.png" alt="" width="135" height="102" />
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="block-partners"><img src="./assets/images/ref2.png" alt="" width="160" height="76" />
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="block-partners"><img src="./assets/images/ref3.png" alt="" width="144" height="73" />
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="block-partners"><img src="./assets/images/ref4.png" alt="" width="141" height="82" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    {% include footer.html %}
+</div>
