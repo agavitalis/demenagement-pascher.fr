@@ -3695,6 +3695,51 @@ html.tablet .ui-to-top {
 
 /*
 *
+* phone-global
+*/
+.phone-global {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 100;
+	width: auto;
+	height: 50px;
+	padding: 5px 10px;
+	font-size: 20px;
+	line-height: 46px;
+	color: #ffffff;
+	background: #ff7800;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	transition: .45s all ease-in-out;
+	transform: translate3d(0, 100px, 0);
+}
+
+.phone-global:hover {
+	color: #ffffff;
+	background: #111111;
+	text-decoration: none;
+}
+
+.phone-global:focus {
+	color: #ffffff;
+}
+
+.phone-global.active {
+	transform: translate3d(0, 0, 0);
+}
+
+
+@media (min-width: 576px) {
+	.phone-global {
+		right: 110px;
+		bottom: 40px;
+	}
+}
+
+/*
+*
 * RD Navbar
 */
 @keyframes rd-navbar-slide-down {
