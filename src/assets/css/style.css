@@ -4042,7 +4042,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-nav-link {
 	position: relative;
 	display: inline-block;
-	color: #333;
+	color: #ffffff;
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -4333,7 +4333,7 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1080;
-	background: #ffffff;
+	background: #333;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
