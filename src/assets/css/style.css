@@ -4340,6 +4340,10 @@ html.tablet .ui-to-top {
 	position: relative;
 }
 
+.front-title{
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+}
+
 /*
 *
 * RD Navbar Fixed

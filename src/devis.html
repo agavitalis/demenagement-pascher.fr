@@ -3,253 +3,324 @@ layout: default
 permalink: /devis
 ---
 
-    <div class="page">
-        
-        {% include navbarOther.html %}
+<div class="page">
 
-        <section class="breadcrumbs-custom bg-image context-dark"
-            style="background-image: url(./assets/images/breadcrumbs-bg.jpg);">
-            <div class="container">
-                <h4 class="breadcrumbs-custom-title">Devis</h4>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li class="active">Devis</li>
-                </ul>
-            </div>
-        </section>
+    {% include navbarOther.html %}
 
-        <section class="bg-default section-md">
-            <div class="container">
-                <div class="row row-50 justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h2>Obtenez un devis en ligne pour votre déménagement en Île-de-France.</h2>
-                            <p>Remplissez le formulaire ci-dessous afin d’obtenir un devis pour votre déménagement en
-                                Île-de-France.
-                                Indiquez votre numéro de téléphone afin d'être recontacté et d’obtenir des informations plus précises</p>
-                        </div>
+    <section class="breadcrumbs-custom bg-image context-dark"
+        style="background-image: url(./assets/images/breadcrumbs-bg.jpg);">
+        <div class="container">
+            <h4 class="breadcrumbs-custom-title">Devis</h4>
+            <ul class="breadcrumbs-custom-path">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active">Devis</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-default section-md">
+        <div class="container">
+            <div class="row row-50 justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Obtenez un devis en ligne pour votre déménagement en Île-de-France.</h2>
+                        <p>Remplissez le formulaire ci-dessous afin d’obtenir un devis pour votre déménagement en
+                            Île-de-France.
+                            Indiquez votre numéro de téléphone afin d'être recontacté et d’obtenir des informations plus
+                            précises</p>
                     </div>
-                    <div class="col-12 col-lg-9">
-                        
-                        <form role="form" method="post" action="devis" enctype="multipart/form-data">
-                            <div class="col-xs-12">
-                               
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="title">
-                                                <h3>Coordonnées</h3>
-                                            </div>
-                                        </div>
-                                        <h4 class="col-sm-12">Information de contact</h4>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_firstname">Vos nom et prénom</label> <input type="text"
-                                                    name="firstname" id="form_firstname" value="" class="form-control"
-                                                    placeholder="Prénom" autofocus="autofocus"> </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_company">Nom de l'entreprise</label> <input type="text"
-                                                    name="company" id="form_company" value="" class="form-control"
-                                                    placeholder="Entreprise" autofocus="autofocus"> </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_email">E-mail</label> <input type="text" name="email"
-                                                    id="form_email" value="" class="form-control"
-                                                    placeholder="text@exemple.fr"> </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_phone">Téléphone</label> <input type="text"
-                                                    name="phone" id="form_phone" value="" class="form-control"
-                                                    placeholder="06 00 00 00 00"> </div>
-                                        </div>
+                </div>
+                <div class="col-12 col-lg-9">
 
-                                    </div>
+                    <form role="form" method="post" action="devis" enctype="multipart/form-data">
 
-                                
+
+                        <div class="row">
+
+                            <div class="title">
+                                <h3>Coordonnées</h3>
                             </div>
 
-                            <div class="col-sm-12">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="title">
-                                            <h3>Adresses</h3>
-                                        </div>
-                                    </div>
-                                   
+                            <div class="row">
+                                <h5 class="col-sm-12 mb-2">Informations de contact</h5>
+
+                                <div class="col-sm-6 ">
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_firstname">Nom et Prénom</label> <input type="text"
+                                            name="firstname" id="form_firstname" value="" class="form-control"
+                                            placeholder="Nom et Prénom" autofocus="autofocus"> </div>
                                 </div>
-                                <div class="row">
-                                    
-                                    <div class="col-xs-12 col-sm-6">
-                                        <fieldset>
-                                            <legend>Adresse actuelle</legend>
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_company">Nom de l'entreprise</label> <input type="text"
+                                            name="company" id="form_company" value="" class="form-control"
+                                            placeholder="Entreprise" autofocus="autofocus"> </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_email">E-mail</label> <input type="text" name="email"
+                                            id="form_email" value="" class="form-control" placeholder="text@exemple.fr">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_phone">Téléphone</label> <input type="text" name="phone"
+                                            id="form_phone" value="" class="form-control" placeholder="06 00 00 00 00">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="title">
+                                <h3>Adresses</h3>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+
+
+                                        <h5 class="col-sm-12 mb-2">Adresse actuelle</h5>
+        
+                                        <div class="col-sm-6 ">
                                             <div class="form-group has-feedback ">
                                                 <label for="form_address1">Adresse</label> <input type="text" name="address1"
                                                     id="form_address1" value="" class="form-control" placeholder="Adresse">
                                             </div>
+                                        </div>
+                                        <div class="col-sm-6 ">
                                             <div class="form-group has-feedback ">
                                                 <label for="form_zipcode1">Code postal</label> <input type="text"
                                                     name="zipcode1" id="form_zipcode1" value="" class="form-control"
-                                                    placeholder="75001"> </div>
+                                                    placeholder="75001">
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class="col-sm-6 ">
                                             <div class="form-group has-feedback ">
                                                 <label for="form_city1">Ville</label> <input type="text" name="city1"
-                                                    id="form_city1" value="" class="form-control" placeholder="Ville"> </div>
+                                                    id="form_city1" value="" class="form-control" placeholder="Ville">
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class="col-sm-6 ">
                                             <div class="form-group has-feedback ">
-                                                <label for="form_input1">Étage</label> <input type="text" name="input1"
-                                                    id="form_input1" value="" class="form-control" placeholder="Étage"> </div>
+                                                <label for="form_input1">Étage</label>
+                                                <input type="text" name="input1" id="form_input1" value="" class="form-control"
+                                                    placeholder="Étage">
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class="col-sm-6 ">
                                             <div class="form-group has-feedback ">
                                                 <label>Avec ascenseur (à remplir si appartement) </label>
-                                                <div class="checkbox" style="margin-top: 0;">
-                                                    <label><input type="checkbox" name="checkbox1"></label> </div>
+                                                <br>
+                                                <input type="checkbox" name="checkbox1" />
                                             </div>
-                                        </fieldset>
+        
+                                        </div>
+        
+        
                                     </div>
+                                </div>
 
-                                    <div class="col-xs-12 col-sm-6">
-                                        <fieldset>
-                                            <legend>Adresse de destination</legend>
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_address2">Adresse</label> <input type="text" name="address2"
-                                                    id="form_address2" value="" class="form-control" placeholder="Adresse">
-                                            </div>
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_zipcode2">Code postal</label> <input type="text"
-                                                    name="zipcode2" id="form_zipcode2" value="" class="form-control"
-                                                    placeholder="75001"> </div>
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_city2">Ville</label> <input type="text" name="city2"
-                                                    id="form_city2" value="" class="form-control" placeholder="Ville"> </div>
-                                            <div class="form-group has-feedback ">
-                                                <label for="form_input2">Étage</label> <input type="text" name="input2"
-                                                    id="form_input2" value="" class="form-control" placeholder="Étage"> </div>
-                                            <div class="form-group has-feedback ">
-                                                <label>Avec ascenseur (à remplir si appartement) </label>
-                                                <div class="checkbox" style="margin-top: 0;">
-                                                    <label><input type="checkbox" name="checkbox2"></label> </div>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="title">
-                                       
-                                        <h3>Prestations</h3>
-                                    </div>
-                                </div>
-                            
-                                <div class="col-xs-12 col-sm-6">
-                                
-                                    <div class="col-xs-12">
-                                        <div id="select3" class="form-group has-feedback ">
-                                            <label for="form_select3">Formules Lights</label> <select name="select3"
-                                                id="form_select3" class="form-control">
-                                                <option>-------</option>
-                                                <option>Standard</option>
-                                                <option>Confort</option>
-                                                <option>Premium</option>
-                                            </select> </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                    <h4>Prestations complémentaires</h4>
-                                    <fieldset>
-                                        <div class="checkbox" style="margin-top: 0;">
-                                            <label><input type="checkbox" name="checkbox3">Garde meuble</label> </div>
-                                        <div class="checkbox" style="margin-top: 0;">
-                                            <label><input type="checkbox" name="checkbox4">Monte meuble</label> </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <fieldset>
+                                <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="title">
-                                                
-                                                <h3>Informations complémentaires</h3>
+
+
+                                        <h5 class="col-sm-12 mb-2">Adresse de destination</h5>
+        
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_address1">Adresse</label> <input type="text" name="address1"
+                                                    id="form_address1" value="" class="form-control" placeholder="Adresse">
                                             </div>
                                         </div>
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_zipcode1">Code postal</label> <input type="text"
+                                                    name="zipcode1" id="form_zipcode1" value="" class="form-control"
+                                                    placeholder="75001">
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_city1">Ville</label> <input type="text" name="city1"
+                                                    id="form_city1" value="" class="form-control" placeholder="Ville">
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label for="form_input1">Étage</label>
+                                                <input type="text" name="input1" id="form_input1" value="" class="form-control"
+                                                    placeholder="Étage">
+                                            </div>
+        
+                                        </div>
+        
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label>Avec ascenseur (à remplir si appartement) </label>
+                                                <br>
+                                                <input type="checkbox" name="checkbox1" />
+                                            </div>
+        
+                                        </div>
+        
+        
                                     </div>
-                                    <h4>Informations complémentaires</h4>
+                                </div>
+
+                            </div>
+                            
+                           
+                        </div>
+
+                        <div class="row">
+
+                            <div class="title">
+                                <h3>Prestations</h3>
+                            </div>
+
+
+                            <div class="row">
+
+
+                                <h5 class="col-sm-12 mb-2">Adresse actuelle</h5>
+
+                                <div class="col-sm-6 ">
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_select3">Formules Lights</label>
+                                        <select class="form-control">
+                                            <option>Standard</option>
+                                            <option>Confort</option>
+                                            <option>Premium</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="row">
+                                        <h5 class="col-sm-12">Prestations complémentaires</h5>
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label>Garde meuble </label>
+                                                <br>
+                                                <input type="checkbox" name="checkbox1" />
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6 ">
+                                            <div class="form-group has-feedback ">
+                                                <label>Monte meuble </label>
+                                                <br>
+                                                <input type="checkbox" name="checkbox1" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="title">
+                                <h3>Informations complémentaires</h3>
+                            </div>
+
+                            <div class="row">
+
+
+                                <h5 class="col-sm-12 mb-2">Informations complémentaires</h5>
+
+                                <div class="col-sm-6 ">
                                     <div class="form-group has-feedback ">
                                         <label for="form_date1">Date de déménagement</label>
-                                        <div class="input-group bootstrap-datepicker">
-                                            <input type="text" name="date1" id="form_date1" value=""
-                                                class="form-control" placeholder="28/08/2020"> <span
-                                                class="input-group-addon"><span
-                                                    class="fa fa-calendar fa-fw"></span></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group ">
-                                        <label for="form_evaluation">Évaluation en m3</label>
-                                        <div class="input-group">
-                                            <input type="text" name="evaluation" id="form_evaluation" value=""
-                                                class="form-control"> <span
-                                                class="input-group-addon">m<sup>3</sup></span>
-                                        </div>
-                                    </div>
-                                    <!-- <a href="" target="_blank" class="btn btn-primary">Calculateur de volume</a> -->
-                                </fieldset>
-                            </div>
 
-                            <div class="col-sm-12">
-                                
-                                <div class="form-group has-feedback ">
-                                    <label for="form_message">Message</label>
-                                     <textarea name="message" id="form_message"
-                                        class="form-control" rows="6"></textarea>
-                                     </div>
-                            </div>
-                           
-                            <div class="col-sm-12">
-                                
-                                <div class="form-button text-center">
-                                    <button class="button button-primary " type="submit">Obtenir le devis de votre
-                                        demanagement</button>
+                                        <input type="datetime-local" value="" class="form-control"
+                                            placeholder="28/08/2020">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_evaluation">Évaluation en m3</label>
+
+                                        <input type="text" name="evaluation" id="form_evaluation" value=""
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-12">
+
+                                    <div class="form-group has-feedback ">
+                                        <label for="form_message">Message</label>
+                                        <textarea name="message" id="form_message" class="form-control"
+                                            rows="6"></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+
+                        </div>
+
+                        <div class="col-sm-12">
+
+                            <div class="form-button text-center">
+                                <button class="button button-primary " type="submit">Obtenir le devis de votre déménagement</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+</div>
+</section>
 
-        <!--Google Map-->
-        <section class="section">
-            <div class="google-map-container" >                         
-              
-                <div class="gmap_canvas"><iframe width="100%" height="700" id="gmap_canvas"
+<!--Google Map-->
+<!-- <section class="section">
+        <div class="google-map-container">
+
+            <div class="gmap_canvas"><iframe width="100%" height="700" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=42%20rue%20Paul%20Claudel%2091000%20EVRY&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                     href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-                </div>
-                <style>
-                    .mapouter {
-                        position: relative;
-                        text-align: right;
-                        height: 700px;
-                        width: 100%;
-                    }
-
-                    .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 700px;
-                        width: 100%;
-                    }
-                </style>
-
             </div>
-        </section>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 700px;
+                    width: 100%;
+                }
 
-        <!-- Footer-->
-        {% include footer.html %}
-    </div>
-  
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 700px;
+                    width: 100%;
+                }
+            </style>
+
+        </div>
+    </section> -->
+
+<!-- Footer-->
+{% include footer.html %}
+</div>
