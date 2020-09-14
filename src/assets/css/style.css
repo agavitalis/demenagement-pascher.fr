@@ -982,7 +982,7 @@ html .list-inline-md > * {
 	padding-left: 25px;
 }
 
-.list-marked > li::before {
+/* .list-marked > li::before {
 	position: absolute;
 	display: inline-block;
 	left: 0;
@@ -991,7 +991,7 @@ html .list-inline-md > * {
 	content: '\f105';
 	font: 400 14px/24px 'FontAwesome';
 	color: #000;
-}
+} */
 
 .list-marked > li + li {
 	margin-top: 4px;
