@@ -972,7 +972,9 @@ html .list-inline-md > * {
 * Marked list
 */
 .list-marked {
-	text-align: left;
+	text-align: center;
+	color: #000;
+	font-size: medium;
 }
 
 .list-marked > li {
@@ -988,7 +990,7 @@ html .list-inline-md > * {
 	min-width: 25px;
 	content: '\f105';
 	font: 400 14px/24px 'FontAwesome';
-	color: #b7b7b7;
+	color: #000;
 }
 
 .list-marked > li + li {
