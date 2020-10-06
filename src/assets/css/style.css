@@ -334,6 +334,19 @@ p [style*='max-width'] {
     text-align: center;
 }
 
+.pricing-price{
+	background-color: #000;
+	color: #ffffff;
+	padding: 1em;
+}
+
+.pricing-price h3, .pricing-price h4, .pricing-price h5{
+	
+	color: #ffffff;
+
+}
+
+
 /*
 * Brand
 */
