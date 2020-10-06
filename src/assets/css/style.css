@@ -304,6 +304,35 @@ p [style*='max-width'] {
 	left: 0;
 	transform: translateX(0);
 }
+.price{
+
+	font-size: 15px;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ff7800;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 10px;
+    /* transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s; */
+}
+
+.btn-plus{
+	font-size: 15px;
+    color: #ffffff;
+    background: #ff7800;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+}
 
 /*
 * Brand
