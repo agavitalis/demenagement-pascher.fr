@@ -102,6 +102,32 @@ html p a:hover {
 	text-decoration: none;
 }
 
+.subscribe-form{
+	background-color: #ff7800;
+}
+
+.subscribe-form p{
+	border: 2px solid #ffffff;
+	padding: 1em;
+	color: #ffffff;
+	font-weight: 800; 
+}
+
+.subscribe-email{
+	background-color: #ffffff;
+	width: 100%;
+	border: none;
+	height: 4em;
+	
+}
+.subscribe-button{
+	background-color: #000;
+	border: none;
+	height: 4em;
+	color: #ffffff;
+	font-weight: 700;
+}
+
 /*
 * Typography
 */
