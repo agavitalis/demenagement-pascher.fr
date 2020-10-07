@@ -126,6 +126,20 @@ html p a:hover {
 	height: 4em;
 	color: #ffffff;
 	font-weight: 700;
+
+	
+}
+
+.price-container{
+	border-radius: 5px; 
+    text-align: center; 
+     background-color: #f3f3f3;
+    -moz-box-shadow: 0 0 6px 2px #b0b2ab;
+    -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+	box-shadow: 0 0 6px 2px #b0b2ab;
+	padding:3em;
+	max-width: 80%;
+	margin: auto;
 }
 
 /*
