@@ -141,7 +141,25 @@ html p a:hover {
 	max-width: 80%;
 	margin: auto;
 }
+.yellow-format {
+    
+    padding: 40px;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+}
 
+.action-layout {
+    
+    background-color: orange;
+    border-radius: 5px;
+	color: white;
+	font-weight: 800;
+}
+
+.action-layout a{
+	color: #ffffff;
+}
 /*
 * Typography
 */
