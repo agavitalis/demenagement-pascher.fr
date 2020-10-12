@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-bottom: 0;
 	font-weight: 700;
 	color: #333;
-	font-family: "Playfair Display", "Times New Roman", Times, serif;
+	font-family: "Montserrat", "Times New Roman", Times, serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class^='heading-'] a {
@@ -343,9 +343,10 @@ p [style*='max-width'] {
 }
 
 .section-title p {
-	font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 18px;
 }
+
 
 .section-title:before {
 	position: absolute;
@@ -1353,7 +1354,6 @@ hr {
 	font-size: 18px;
 	line-height: 28px;
 	border: 1px solid;
-	font-family: "Playfair Display", "Times New Roman", Times, serif;
 	font-weight: 700;
 	letter-spacing: 0;
 	text-transform: capitalize;
@@ -3790,7 +3790,7 @@ html.tablet .ui-to-top {
 
 @media (min-width: 576px) {
 	.ui-to-top {
-		right: 40px;
+		right: 200px;
 		bottom: 40px;
 	}
 }
@@ -3835,8 +3835,8 @@ html.tablet .ui-to-top {
 
 @media (min-width: 576px) {
 	.phone-global {
-		right: 110px;
-		bottom: 40px;
+		/* right: 110px;
+		bottom: 40px; */
 	}
 }
 
