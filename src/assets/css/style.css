@@ -5399,7 +5399,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-classic.rd-navbar-classic-dark.rd-navbar-static .rd-nav-item {
-	color: #ffffff;
+	/* color: #ffffff; */
 }
 
 .rd-navbar-classic.rd-navbar-classic-dark.rd-navbar-static .rd-nav-item .rd-nav-link {
