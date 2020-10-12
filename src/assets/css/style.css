@@ -335,6 +335,7 @@ p [style*='max-width'] {
 	left: 0;
 	right: 0;
 	z-index: 2;
+	background-color: #fff;
 }
 
 .section-title {
@@ -4144,7 +4145,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-nav-link {
 	position: relative;
 	display: inline-block;
-	color: #ffffff;
+	/* color: #ffffff; */
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -4435,6 +4436,7 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1080;
+	color:#fff;
 	background: #333;
 }
 
